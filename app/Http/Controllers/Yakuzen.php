@@ -15,4 +15,9 @@ class Yakuzen extends Controller
     	$data['menu'] = 'feedback';
     	return \View::make('yakuzen/feedback')->with($data);
     }
+
+    public function news(){
+    	$data['menu'] = 'news';
+    	return \View::make('yakuzen/news')->with($data);
+    }
 }

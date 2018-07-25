@@ -1,3 +1,4 @@
+
 <div class="top-info">
 	<!-- <span class="name"><b>Công ty cổ phần thương mại và dịch vụ StarVi</b></span> -->
 
@@ -10,15 +11,15 @@
 	
 	<div class="clear"></div>
 </div>
-<div class="header">
+<div class="header {{$menu!='home' ? 'alt' : ''}}">
 	<div class="drd">
 		<a href="{{url('/')}}"><img src="img/drd.png"></a>
 	</div>
 	<div class="menu">
 		<ul>
 			<li class="{{$menu=='home' ? 'active' : ''}}"><a href="{{url('/')}}">Trang chủ</a></li>
-			<li><a href="#">Trà thực dưỡng Yakuzen</a></li>
-			<li><a href="#">Kiến thức mất ngủ</a></li>
+			<li class=""><a href="#">Trà thực dưỡng Yakuzen</a></li>
+			<li class="{{$menu=='news' ? 'active' : ''}}"><a href="{{url('/')}}/kien-thuc-mat-ngu">Kiến thức mất ngủ</a></li>
 			<li><a href="#">Tư vấn</a></li>
 			<li class="{{$menu=='feedback' ? 'active' : ''}}"><a href="{{url('/')}}/lien-he">Liên hệ</a></li>
 			<span class="clear"></span>

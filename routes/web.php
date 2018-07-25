@@ -14,3 +14,5 @@
 Route::get('/', 'Yakuzen@index');
 
 Route::get('/lien-he', 'Yakuzen@contact');
+
+Route::get('/kien-thuc-mat-ngu', 'Yakuzen@news');

@@ -1,7 +1,7 @@
 @extends('yakuzen.template')
 
 @section('title')
-	Trà thực dưỡng Yakuzen - Liên hệ
+	Trà thực dưỡng Yakuzen | Liên hệ
 @endsection
 
 @section('script')

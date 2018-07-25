@@ -28,6 +28,11 @@ ul li {
 .header {
   padding: 30px 11% 5px 11%;
 }
+.header.alt {
+  -webkit-box-shadow: 0px 3px 5px #e8e8e8;
+          box-shadow: 0px 3px 5px #e8e8e8;
+  padding-bottom: 20px;
+}
 .header .drd {
   float: left;
 }
@@ -156,7 +161,7 @@ ul li {
 }
 .i-block {
   color: #333;
-  padding: 70px 12% 100px 12%;
+  padding: 70px 11% 100px 11%;
 }
 .i-block.odd {
   background-color: #fffafa;
@@ -616,6 +621,67 @@ ul li {
 .news .content .action a {
   text-transform: none;
   padding: 10px;
+}
+.news-block .left {
+  width: 70%;
+  float: left;
+}
+.news-block .right {
+  width: 23%;
+  float: right;
+}
+.news-block .news-item {
+  position: relative;
+  padding-left: 320px;
+  min-height: 250px;
+}
+.news-block .news-item img {
+  width: 300px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.news-block .news-item h4 {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.news-block .news-item p {
+  margin-top: 0;
+  font-size: 17px;
+  padding-bottom: 20px;
+}
+.news-block .news-item a {
+  padding: 4px 10px 6px;
+  color: #fff;
+  background: #cb1218;
+  font-size: 15px;
+}
+.news-block .f-item {
+  position: relative;
+  padding-left: 85px;
+  min-height: 80px;
+}
+.news-block .f-item img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 70px;
+}
+.news-block .f-item h4 {
+  font-weight: 500;
+  font-size: 16px;
+}
+.news-block .right-title {
+  margin-top: 27px;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.news-block .info {
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 15px;
 }
 @-webkit-keyframes bling {
   from {
