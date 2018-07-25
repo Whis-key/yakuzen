@@ -9,6 +9,11 @@
 @endsection
 
 @section('content')
+	<div class="hidden" 
+		id="config"
+		data-expiration="{{$expiration}}">
+	</div>
+
 	<div class="banner">
 		<img src="{{url('/')}}/img/banner/doctor.png" class="doctor">
 
@@ -20,6 +25,11 @@
 			<h2>Bí quyết sống khỏe từ Nhật Bản</h2>
 
 			<p>Trà Yakuzen với các thành phần hoàn toàn tự nhiên, nhờ đó giúp bạn không những có được giấc ngủ ngon và sâu mà còn đem lại vóc dáng như mong đợi.</p>
+
+			<!-- <div class="price">
+				<span>Chỉ với</span>
+			<span class="number"> 1.438.000đ</span>/hộp
+			</div> -->
 		</div>
 
 		<a href="{{url('/')}}/lien-he" target="_blank" class="button">Đăng ký tư vấn</a>
@@ -270,46 +280,22 @@
 		<h2 class="title">Khách hàng nói gì về <span class="highlight">Trà Yakuzen</span></h2>
 
 		<div class="content customer">
-			<div class="item quote">
-				<div class="cus">
-					<img src="{{url('/')}}/img/quo/quo1.jpg">
-					<h4 class="name">Nguyễn Thanh Tâm</h4>
-					<span class="info">Hà Nội, 23 tuổi</span>
-					<div class="clear"></div>
+			@foreach ($feedbacks as $feedback)
+				<div class="item quote">
+					<div class="cus">
+						<img src="{{url('/') . $feedback->avatar}}">
+						<h4 class="name">{{$feedback->name}}</h4>
+						<span class="info">{{$feedback->address}}, {{$feedback->age}} tuổi</span>
+						<div class="clear"></div>
+					</div>
+					<p class="text">"{{$feedback->content}}"</p>
 				</div>
-				<p class="text">
-					"Cách đây 3 tháng, mất ngủ là nỗi ám ảnh với tôi, hàng đêm thức trắng, có hôm chỉ ngủ được 2-3 tiếng làm tôi cực kì căng thẳng, stress, có những lúc tưởng như bị trầm cảm. Tôi biết đến thực y trà Yakuzen qua hội nghị doanh nhân nữ châu Á, ở đó Yakuzen được sử dụng là thương hiệu độc quyền. Tôi mua 2 hộp về uống. Uống hơn nửa hộp đầu tiên không thấy tiến triển nhiều, tôi định bỏ nhưng được chuyên gia bên Yakuzen khuyên phải dùng đúng liệu trình. Hết hộp thứ nhất tôi ngủ được 4 tiếng mỗi đêm. Hiện tôi đang dùng sang hộp thứ 2, tôi đã ngủ được 6-7 tiếng mỗi đêm. Thật tuyệt vời."
-				</p>
-			</div>
-
-			<div class="item quote">
-				<div class="cus">
-					<img src="{{url('/')}}/img/quo/quo2.jpg">
-					<h4 class="name">Phạm Thanh Hằng</h4>
-					<span class="info">Hả Phòng, 24 tuổi</span>
-					<div class="clear"></div>
-				</div>
-				<p class="text">
-					"Tôi bị mất ngủ đã 6 năm, mỗi đêm chỉ ngủ được 1-2 tiếng, cuộc sống rất mệt mỏi nhiều khi hay nghĩ quẩn. Gần đây con trai tôi có mua 1 hộp thực y trà Yakuzen nói là chữa mất ngủ, tôi uống thử, thấy người khỏe, nhẹ nhàng hơn, ngủ cũng được 3-4 tiếng rồi. Tôi vẫn đang sử dụng sang hộp thứ 2, cảm ơn thực y trà Yakuzen."
-				</p>
-			</div>
-
-			<div class="item quote last">
-				<div class="cus">
-					<img src="{{url('/')}}/img/quo/quo3.jpg">
-					<h4 class="name">Nguyễn Trần Cảm Tú</h4>
-					<span class="info">Hà Nội, 26 tuổi</span>
-					<div class="clear"></div>
-				</div>
-				<p class="text">
-					"Chồng tôi là giám đốc của một công ty bất động sản, công việc anh ấy cũng áp lực và căng thẳng, gần đây anh ấy bị mất ngủ, mỗi đêm chỉ ngủ được 1-2 tiếng, tâm sinh lý cũng cáu gắt với tôi nhiều hơn. Tôi cũng cho anh ấy sử dụng đủ các sản phẩm khác nhau nhưng không hiệu quả. Rồi một ngày đọc quảng cáo thực y trà Yakuzen là 1 thương hiệu của Nhật Bản, tôi đặt thử. Chồng tôi uống đến nay được 20 ngày, giấc ngủ đã được 6-8 tiếng trở lại, anh ấy không cáu gắt với tôi nữa. Cảm ơn thực y trà Yakuzen!"
-				</p>
-			</div>
+			@endforeach
 
 			<div class="video center">
 				<h3>Video chia sẻ của khách hàng đã sử dụng Yakuzen</h3>
 
-				<iframe width="800" height="450" src="https://www.youtube.com/embed/K7jcknnIbl0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<iframe width="800" height="450" src="{{$feedbackVideoLink}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			</div>
 
 
@@ -323,28 +309,30 @@
 	@include('yakuzen.contact')
 
 	<div class="i-block news odd">
-		<h2 class="title">Tin tức nổi bật</h2>
+		<h2 class="title">Tin tức mới nhất</h2>
 
 		<div class="content">
-			<div class="item">
-				<h3 class="news-title">Mất ngủ nên ăn gì, kiêng ăn gì?</h3>
-				<p>Khi bạn chẳng may là một trong vô vàn người bị mất ngủ, bạn sẽ mong muốn tìm lại được một giấc ngủ sâu tự nhiên mà không ảnh hưởng tới sức khỏe. Vậy bạn bị mất ngủ nên ăn gì, uống gì để có được giấc ngủ ngon <a href="#">Xem thêm</a></p>
-			</div>
+			@php
+				$i=0;
+			@endphp
 
-			<div class="item">
-				<h3 class="news-title">Mất ngủ khi mang thai: Triệu chứng và cách chữa bà bầu nên biết</h3>
-				<p>Tình trạng bà bầu bị mất ngủ khi mang thai là một trong những trường hợp không còn quá xa lại nữa. Nếu như tình trạng này kéo dài sẽ ít nhiều gây ra ảnh hưởng không tốt tới sức khỏe của thai nhi và người mẹ. Vì vậy <a href="#">Xem thêm</a></p>
-			</div>
+			@foreach($news as $item)
+				@php
+					$i++;
+				@endphp
 
-			<div class="item last">
-				<h3 class="news-title">Top 16 nguyên nhân mất ngủ mà bạn “không ngờ tới”</h3>
-				<p>Nếu như tìm kiếm "nguyên nhân mất ngủ" lên Google.com, bạn sẽ thấy kết quả trả về lên tới 40.300.000 kết quả tìm kiếm. Điều đấy cho thấy rằng có rất nhiều người mất giấc giống như bạn, nhưng lại không biết tại sao mất ngủ. Chính vì vậy <a href="#">Xem thêm</a></p>
-			</div>
+				<div class="item {{$i==sizeof($news) ? 'last' : ''}}">
+					<h3 class="news-title">{{$item->title}}</h3>
+					<p>{{$item->snippet}}...
+					<br>
+					<a href="#">Xem thêm</a></p>
+				</div>
+			@endforeach
 
 			<div class="clear"></div>
 
 			<div class="center action">
-				<a href="#" class="button">Xem thêm tin khác</a>
+				<a href="{{url('/')}}/kien-thuc-mat-ngu" class="button">Xem thêm tin khác</a>
 			</div>
 		</div>
 	</div>

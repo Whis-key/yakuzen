@@ -16,3 +16,11 @@ Route::get('/', 'Yakuzen@index');
 Route::get('/lien-he', 'Yakuzen@contact');
 
 Route::get('/kien-thuc-mat-ngu', 'Yakuzen@news');
+
+Route::post('/dang-ky', 'Yakuzen@registration');
+
+Route::get('/admin', 'Admin@index');
+
+Route::get('/admin/danh-sach-dang-ky', 'Admin@registrations');
+
+Route::post('/save-config', 'Admin@saveConfig');

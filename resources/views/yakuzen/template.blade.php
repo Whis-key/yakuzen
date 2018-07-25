@@ -22,6 +22,12 @@
 	  crossorigin="anonymous">
 	</script>
 
+	<script type="text/javascript">
+		window.app = {
+			baseUrl: '{{url("/")}}'
+		}
+	</script>
+
 	@yield('script')
 </body>
 </html>

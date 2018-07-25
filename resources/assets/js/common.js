@@ -1,7 +1,9 @@
-var phoneRegex = /(09|08|\+849|\+841|\+848)[0-9]{8}/;
+require('./bootstrap.js');
+
+var phoneRegex = /((09|08|\+849|\+841|\+848)[0-9]{8}|(01|\+841)[0-9]{9})/;
 var errorTimeout = null;
 
-var time = 86400 * 10;
+var time = parseInt($('#config').attr('data-expiration'));
 
 $('a[href="#"]').click(function(){
 	return false;
@@ -27,7 +29,23 @@ $('.contact-submit').click(function(){
 	if(!flag){
 		setUpErrorTimeout();
 	} else {
-		phoneValidate();
+		phoneValidate(function(){
+			axios.post(app.baseUrl + '/dang-ky', {
+				name: name, 
+				phone: phone
+			})
+			.then(function(response){
+				$('.notification').fadeIn();
+				setTimeout(function(){
+					$('.notification').fadeOut();
+				}, 7000);
+
+				$('#contact-form .form input').val('');
+			})
+			.catch(function(){
+				
+			});
+		});
 	}
 });
 
@@ -80,7 +98,7 @@ function scrollToContactForm(){
     }, 'slow');
 }
 
-function phoneValidate(){
+function phoneValidate(callback){
 	var phone = $('#contact-form [name="phone"]').val();
 
 	if(!phoneRegex.test(phone)){
@@ -88,6 +106,12 @@ function phoneValidate(){
 			$('#contact-form .phone-error').css('display', 'block');
 		}, 10);
 		scrollToContactForm();
+	} else {
+		console.log('Valid infomation');
+
+		if(callback){
+			callback();
+		}
 	}
 }
 

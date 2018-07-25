@@ -26,9 +26,9 @@
 			<h4>Liên hệ</h4>
 
 			<ul>
-				<li><a href=""><img src="{{url('/')}}/img/fb.png"></a></li>
-				<li><a href=""><img src="{{url('/')}}/img/youtube.png"></a></li>
-				<li><a href=""><img src="{{url('/')}}/img/g.png"></a></li>
+				<li><a href="https://www.facebook.com/biquyetngungonNhatBan"><img src="{{url('/')}}/img/fb.png"></a></li>
+				<li><a href="https://www.facebook.com/biquyetngungonNhatBan"><img src="{{url('/')}}/img/youtube.png"></a></li>
+				<li><a href="https://www.facebook.com/biquyetngungonNhatBan"><img src="{{url('/')}}/img/g.png"></a></li>
 			</ul>
 		</div>
 	</div>

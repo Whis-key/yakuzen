@@ -11,7 +11,7 @@
 	
 	<div class="clear"></div>
 </div>
-<div class="header {{$menu!='home' ? 'alt' : ''}}">
+<div class="header {{$menu!='home' && $menu!='feedback' ? 'alt' : ''}}">
 	<div class="drd">
 		<a href="{{url('/')}}"><img src="img/drd.png"></a>
 	</div>

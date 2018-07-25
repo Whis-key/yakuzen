@@ -47,4 +47,6 @@
 	<div class="action">
 		<a href="#" class="button contact-submit">Nhận cuộc gọi tư vấn</a>
 	</div>
+
+	<div class="notification">Chúc mừng bạn đã đăng ký thành công, chúng tôi sẽ gọi lại để tư vấn cho bạn</div>
 </div>
