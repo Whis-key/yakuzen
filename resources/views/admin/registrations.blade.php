@@ -1,6 +1,13 @@
 @extends('admin.template')
 
+@section('script')
+	<script type="text/javascript" src="{{url('/')}}/assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script type="text/javascript" src="{{url('/')}}/assets/js/core/app.js"></script>
+	<script type="text/javascript" src="{{url('/')}}/js/registration.js"></script>
+@endsection
+
 @section('content')
+<div id="registration">
 	<div class="panel panel-flat">
 		<div class="panel-heading">
 			<h5 class="panel-title">Danh sách khách hàng đăng ký nhận tư vấn <a class="heading-elements-toggle"><i class="icon-more"></i></a></h5>
@@ -31,4 +38,5 @@
 			</thead>
 		</table>
 	</div>
+</div>
 @endsection

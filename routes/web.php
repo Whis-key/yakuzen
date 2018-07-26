@@ -21,6 +21,10 @@ Route::post('/dang-ky', 'Yakuzen@registration');
 
 Route::get('/admin', 'Admin@index');
 
-Route::get('/admin/danh-sach-dang-ky', 'Admin@registrations');
-
 Route::post('/save-config', 'Admin@saveConfig');
+
+Route::namespace('Admin')->group(function () {
+    Route::get('/admin/danh-sach-dang-ky', 'Registration@index');
+    Route::post('/admin/danh-sach-dang-ky/ds', 'Registration@list');
+    Route::post('/admin/danh-sach-dang-ky/xu-ly', 'Registration@mark');
+});

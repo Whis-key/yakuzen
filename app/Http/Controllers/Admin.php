@@ -16,12 +16,6 @@ class Admin extends Controller
     	return \View::make('admin.index')->with($data);
     }
 
-    public function registrations(){
-    	$data['menu'] = 'registration';
-
-    	return \View::make('admin.registrations')->with($data);
-    }
-
     public function saveConfig(StoreConfig $request){
     	Config::store(
     		$request->input('price'),

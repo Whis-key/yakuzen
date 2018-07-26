@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Quản trị | Yakuzen</title>
+	<meta name="csrf-token" content="{{ csrf_token() }}">
+	
 	<link rel="shortcut icon" type="image/png" href="{{url('/')}}/img/banner/doctor.png"/>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
 
@@ -21,16 +23,13 @@
 	<script type="text/javascript" src="{{url('/')}}/assets/js/plugins/loaders/blockui.min.js"></script>
 	<!-- /core JS files -->
 
-	<script type="text/javascript" src="{{url('/')}}/assets/js/plugins/visualization/d3/d3.min.js"></script>
-	<script type="text/javascript" src="{{url('/')}}/assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
-	<script type="text/javascript" src="{{url('/')}}/assets/js/plugins/forms/styling/switchery.min.js"></script>
-	<script type="text/javascript" src="{{url('/')}}/assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script type="text/javascript" src="{{url('/')}}/assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
-	<script type="text/javascript" src="{{url('/')}}/assets/js/plugins/ui/moment/moment.min.js"></script>
-	<script type="text/javascript" src="{{url('/')}}/assets/js/plugins/pickers/daterangepicker.js"></script>
+	<script type="text/javascript">
+		window.app = {
+			baseUrl: '{{url("/")}}'
+		}
+	</script>
 
-	<script type="text/javascript" src="{{url('/')}}/assets/js/core/app.js"></script>
-	<script type="text/javascript" src="{{url('/')}}/assets/js/pages/dashboard.js"></script>
+	@yield('script')
 </head>
 <body>
 	@include('admin.navbar')
@@ -44,7 +43,7 @@
 			@include('admin.sidebar')
 
 			<div class="content-wrapper">
-				<div class="content">
+				<div class="content" id="app">
 					@yield('content')
 				</div>
 			</div>

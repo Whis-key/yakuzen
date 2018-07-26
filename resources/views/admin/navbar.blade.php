@@ -3,6 +3,7 @@
 			<a class="navbar-brand" href="index.html">
 				<img src="{{url('/')}}/assets/images/logo_icon_light.png">
 			</a>
+			<!-- <span>Yakuzen</span> -->
 
 			<ul class="nav navbar-nav visible-xs-block">
 				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
@@ -11,9 +12,9 @@
 		</div>
 
 		<div class="navbar-collapse collapse" id="navbar-mobile">
-			<ul class="nav navbar-nav">
+			<!-- <ul class="nav navbar-nav">
 				<li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
-			</ul>
+			</ul> -->
 
 
 			<ul class="nav navbar-nav navbar-right">
