@@ -671,7 +671,10 @@ ul li {
 .news-block .f-item {
   position: relative;
   padding-left: 85px;
-  min-height: 80px;
+  min-height: 60px;
+}
+.news-block .f-item a {
+  color: #333;
 }
 .news-block .f-item img {
   position: absolute;

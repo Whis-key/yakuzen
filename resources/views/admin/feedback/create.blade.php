@@ -43,6 +43,10 @@
 
 
 				@if(Session::has('success'))
+					@php
+						$pdata = null;
+					@endphp
+					
 					<div class="alert alert-success no-border">
 						<button type="button" class="close" data-dismiss="alert"><span>×</span><span class="sr-only">Close</span></button>
 						<strong>Chúc mừng. </strong> Lưu phản hồi thành công.

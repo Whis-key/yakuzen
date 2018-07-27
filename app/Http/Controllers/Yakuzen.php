@@ -35,8 +35,23 @@ class Yakuzen extends Controller
     }
 
     public function news(){
+        $news = News::get(0);
+        $hot = News::get(0, 6, 0, true);
+
+        $data['hotItems'] = $hot;
+        $data['items'] = $news;
     	$data['menu'] = 'news';
     	return \View::make('yakuzen/news')->with($data);
+    }
+
+    public function qa(){
+        $news = News::get(1);
+        $hot = News::get(null, 6, 0, true);
+
+        $data['hotItems'] = $hot;
+        $data['items'] = $news;
+        $data['menu'] = 'qa';
+        return \View::make('yakuzen/news')->with($data);
     }
 
     public function registration(StoreRegistration $request){

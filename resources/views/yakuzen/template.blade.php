@@ -13,15 +13,20 @@
 
 		@yield('content')
 
+		<a href="#" class="back2top button"><i class="fa fa-angle-up"></i></a>
+
+		<a href="https://www.facebook.com/messages/t/biquyetngungonNhatBan" target="_blank" class="fb-m"><img src="{{url('/')}}/img/facebook-mess.png">
+			<span>Trò chuyện qua Facebook Messager</span>
+		</a>
+
 		@include('yakuzen.footer')
 	</div>
-
 	<script
 	  src="https://code.jquery.com/jquery-3.3.1.js"
 	  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 	  crossorigin="anonymous">
 	</script>
-
+	<script type="text/javascript"></script>
 	<script type="text/javascript">
 		window.app = {
 			baseUrl: '{{url("/")}}'

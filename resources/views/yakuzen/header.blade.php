@@ -20,7 +20,7 @@
 			<li class="{{$menu=='home' ? 'active' : ''}}"><a href="{{url('/')}}">Trang chủ</a></li>
 			<li class=""><a href="#">Trà thực dưỡng Yakuzen</a></li>
 			<li class="{{$menu=='news' ? 'active' : ''}}"><a href="{{url('/')}}/kien-thuc-mat-ngu">Kiến thức mất ngủ</a></li>
-			<li><a href="#">Tư vấn</a></li>
+			<li class="{{$menu=='qa' ? 'active' : ''}}"><a href="{{url('/')}}/tu-van">Tư vấn</a></li>
 			<li class="{{$menu=='feedback' ? 'active' : ''}}"><a href="{{url('/')}}/lien-he">Liên hệ</a></li>
 			<span class="clear"></span>
 		</ul>

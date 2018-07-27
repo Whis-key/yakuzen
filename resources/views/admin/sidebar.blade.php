@@ -39,7 +39,7 @@
 						</ul>
 					</li>
 					<li class="{{in_array($menu, ['news-list', 'news-create']) ? 'active' : ''}}">
-						<a href="javascript:;" class="has-ul"><i class="icon-people"></i> <span>Quản lý tin tức</span></a>
+						<a href="javascript:;" class="has-ul"><i class="icon-file-text2"></i> <span>Quản lý tin tức</span></a>
 						<ul style="display: {{in_array($menu, ['news-list', 'news-create']) ? 'block' : 'none'}}">
 							<li class="{{$menu=='news-create' ? 'active' : ''}}""><a href="{{url('/')}}/admin/tin-tuc/them-moi">Thêm bài viết mới</a></li>
 							<li class="{{$menu=='news-list' ? 'active' : ''}}"><a href="{{url('/')}}/admin/tin-tuc/ds">Danh sách bài viết</a></li>

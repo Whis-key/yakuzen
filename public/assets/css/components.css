@@ -2876,7 +2876,7 @@ label.checkbox-switch.checkbox-inline {
   color: rgba(255, 255, 255, 0.6);
 }
 .select2-results__option[aria-selected=true] {
-  background-color: #2196F3;
+  background-color: #f44336;
   color: #fff;
 }
 .select2-results__options--nested > .select2-results__option {
@@ -20567,10 +20567,32 @@ label.display-block {
   display: none;
 }
 
+.dataTables_wrapper table tbody tr td.actions a{
+  display: block;
+  color: #f21f10;
+}
+
 .dataTables_wrapper table tbody tr td img{
   width: 50px;
   margin-right: 10px;
   border-radius: 50%;
+}
+
+.dataTables_wrapper table.square tbody tr td img{
+  width: 100px;
+  margin-right: 10px;
+  border-radius: 0;
+}
+
+.dataTables_wrapper table.square tbody tr td.news-item{
+}
+
+.dataTables_wrapper table.square tbody tr td.news-item > span{
+  display: inline-block;
+  min-height: 40px;
+}
+
+.dataTables_wrapper table.square tbody tr td.news-item img{
 }
 
 body, .page-content, .page-container, .sidebar{
