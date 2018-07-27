@@ -23,6 +23,7 @@
 	<script type="text/javascript" src="{{url('/')}}/assets/js/plugins/loaders/blockui.min.js"></script>
 	<!-- /core JS files -->
 
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
 	<script type="text/javascript">
 		window.app = {
 			baseUrl: '{{url("/")}}'

@@ -1,12 +1,13 @@
 require('../bootstrap.js');
 require('datatables');
 require('select2');
+require('bootbox');
 
 import {datatableConfig} from './app.constants';
 
 $(document).ready(function(){
 	new Vue({
-		el: '#registration',
+		el: '#feedback-list',
 		data: {
 			table: null
 		},
@@ -18,17 +19,31 @@ $(document).ready(function(){
 			createEventListeners(){
 				var $this = this;
 
-				$(document).on('click', '.mark-processed', function(){
+				$(document).on('click', '.delete-r', function(){
 					var id = $(this).attr('data-id');
-
-					axios.post(app.baseUrl + '/admin/danh-sach-dang-ky/xu-ly', {
-						id: id
-					})
-					.then(function(response){
-						$this.table.draw(false);
-					})
-					.catch(function(e){
-
+					
+					bootbox.confirm({
+					    message: "Bạn có chắc chắn muốn xóa phản hồi này?",
+					    buttons: {
+					        confirm: {
+					            label: 'Xác nhận',
+					            className: 'btn-danger'
+					        },
+					        cancel: {
+					            label: 'Hủy',
+					            className: 'btn-link'
+					        }
+					    },
+					    callback: function (result) {
+					    	if(result){
+								axios.post(app.baseUrl + '/admin/phan-hoi-khach-hang/xoa', {
+									id: id
+								})
+								.then(function(response){
+									$this.table.draw(false);
+								});
+					    	}
+					    }
 					});
 				});
 			},
@@ -36,11 +51,11 @@ $(document).ready(function(){
 				var config = datatableConfig;
 
 				config.ajax = {
-		        	url: app.baseUrl + '/admin/danh-sach-dang-ky/ds',
+		        	url: app.baseUrl + '/admin/phan-hoi-khach-hang/danh-sach',
 		        	type: 'POST'
 		        };
 
-		        config.order = [[3, 'desc']];
+		        config.order = [[1, 'asc']];
 				config.columns = [
 		        	{
 		        		name: '',
@@ -53,34 +68,36 @@ $(document).ready(function(){
 		        	{
 		        		name: 'name',
 		        		data: 'name',
-		        		orderable: false,
+		        		orderable: true,
+		        		render: function(data, type, row){
+		        			return '<img src="'+app.baseUrl+ row.avatar +'"> ' + row.name
+		        		}
 		        	},
 		        	{
-		        		name: 'phone',
-		        		data: 'phone',
+		        		name: 'address',
+		        		data: 'address',
 		        		orderable: false
 		        	},
 		        	{
-		        		name: 'created_at',
-		        		data: 'created_at',
-		        		orderable: true
+		        		name: 'age',
+		        		data: 'age',
+		        		orderable: false
+		        	},
+		        	{
+		        		name: 'content',
+		        		data: 'content',
+		        		orderable: false
 		        	},
 		        	{
 		        		name: '',
 		        		data: null,
 		        		orderable: false,
+		        		className: 'text-center',
 		        		render: function(data, type, row){
-		        			return parseInt(row.status) ? 'Đã xử lý' : '<span class="text-danger">Chưa xử lý</span>'
+		        			return '<a href="javascript:;" class="delete-r" data-id="'+row.id+'">Xóa</a>'
 		        		}
 		        	},
-		        	{
-		        		name: '',
-		        		data: null,
-		        		orderable: false,
-		        		render: function(data, type, row){
-		        			return parseInt(row.status) ? '' : '<a href="javascript:;" class="mark-processed" data-id="'+row.id+'">Đánh dấu đã xử lý</a>';
-		        		}
-		        	}
+		        	
 		        ];
 
 				this.table = $('#registration-table').DataTable(config);

@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 49);
+/******/ 	return __webpack_require__(__webpack_require__.s = 52);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -47141,139 +47141,7 @@ module.exports = function spread(callback) {
 
 /***/ }),
 /* 37 */,
-/* 38 */,
-/* 39 */,
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */,
-/* 49 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(50);
-
-
-/***/ }),
-/* 50 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(11);
-__webpack_require__(51);
-__webpack_require__(52);
-
-$(document).ready(function () {
-	new Vue({
-		el: '#registration',
-		data: {
-			table: null
-		},
-		mounted: function mounted() {
-			this.setupDataTable();
-			this.createEventListeners();
-		},
-
-		methods: {
-			createEventListeners: function createEventListeners() {
-				var $this = this;
-
-				$(document).on('click', '.mark-processed', function () {
-					var id = $(this).attr('data-id');
-
-					axios.post(app.baseUrl + '/admin/danh-sach-dang-ky/xu-ly', {
-						id: id
-					}).then(function (response) {
-						$this.table.draw();
-					}).catch(function (e) {});
-				});
-			},
-			setupDataTable: function setupDataTable() {
-				this.table = $('#registration-table').DataTable({
-					autoWidth: true,
-					dom: '<"datatable-header"fl><"datatable-scroll"t><"datatable-footer"ip>',
-					language: {
-						search: '<span>Tìm kiếm:</span> _INPUT_',
-						searchPlaceholder: 'Nhập từ khóa ...',
-						lengthMenu: '<span>Số bản ghi:</span> _MENU_',
-						paginate: { 'first': 'Đầu', 'last': 'Cuối', 'next': '&rarr;', 'previous': '&larr;' },
-						"emptyTable": "Không tìm thấy kết quả",
-						"info": "Hiển thị _START_ đến _END_ trong số _TOTAL_ kết quả",
-						"infoEmpty": ""
-					},
-					drawCallback: function drawCallback() {
-						$(this).find('tbody tr').slice(-3).find('.dropdown, .btn-group').addClass('dropup');
-						$('.dataTables_length select').select2({
-							minimumResultsForSearch: -1
-						});
-
-						console.log('Draw');
-					},
-					preDrawCallback: function preDrawCallback() {
-						$(this).find('tbody tr').slice(-3).find('.dropdown, .btn-group').removeClass('dropup');
-					},
-					serverSide: true,
-					ajax: {
-						url: app.baseUrl + '/admin/danh-sach-dang-ky/ds',
-						type: 'POST'
-					},
-					order: [[3, 'desc']],
-					columns: [{
-						name: '',
-						data: null,
-						orderable: false,
-						render: function render() {
-							return '';
-						}
-					}, {
-						name: 'name',
-						data: 'name',
-						orderable: false
-					}, {
-						name: 'phone',
-						data: 'phone',
-						orderable: false
-					}, {
-						name: 'created_at',
-						data: 'created_at',
-						orderable: true
-					}, {
-						name: '',
-						data: null,
-						orderable: false,
-						render: function render(data, type, row) {
-							return parseInt(row.status) ? 'Đã xử lý' : '<span class="text-danger">Chưa xử lý</span>';
-						}
-					}, {
-						name: '',
-						data: null,
-						orderable: false,
-						render: function render(data, type, row) {
-							return parseInt(row.status) ? '' : '<a href="javascript:;" class="mark-processed" data-id="' + row.id + '">Đánh dấu đã xử lý</a>';
-						}
-					}]
-				});
-
-				var $this = this;
-				this.table.on('draw.dt', function () {
-					console.log('Indexing');
-					$this.table.column(0, { search: 'applied', order: 'applied' }).nodes().each(function (cell, i) {
-						var page = $this.table.page.info().page;
-						var length = $this.table.page.info().length;
-
-						cell.innerHTML = i + 1 + length * page;
-					});
-				});
-			}
-		}
-	});
-});
-
-/***/ }),
-/* 51 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! DataTables 1.10.18
@@ -62576,7 +62444,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! DataTables 1
 
 
 /***/ }),
-/* 52 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var require;var require;/*!
@@ -68430,6 +68298,155 @@ S2.define('jquery.select2',[
   return select2;
 }));
 
+
+/***/ }),
+/* 40 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return datatableConfig; });
+var datatableConfig = {
+    autoWidth: true,
+    dom: '<"datatable-header"fl><"datatable-scroll"t><"datatable-footer"ip>',
+    language: {
+        search: '<span>Tìm kiếm:</span> _INPUT_',
+        searchPlaceholder: 'Nhập từ khóa ...',
+        lengthMenu: '<span>Số bản ghi:</span> _MENU_',
+        paginate: { 'first': 'Đầu', 'last': 'Cuối', 'next': '&rarr;', 'previous': '&larr;' },
+        "emptyTable": "Không tìm thấy kết quả",
+        "info": "Hiển thị _START_ đến _END_ trong số _TOTAL_ kết quả",
+        "infoEmpty": ""
+    },
+    drawCallback: function drawCallback() {
+        $(this).find('tbody tr').slice(-3).find('.dropdown, .btn-group').addClass('dropup');
+        $('.dataTables_length select').select2({
+            minimumResultsForSearch: -1
+        });
+
+        console.log('Draw');
+    },
+    preDrawCallback: function preDrawCallback() {
+        $(this).find('tbody tr').slice(-3).find('.dropdown, .btn-group').removeClass('dropup');
+    },
+    serverSide: true
+};
+
+/***/ }),
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(53);
+
+
+/***/ }),
+/* 53 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_constants__ = __webpack_require__(40);
+__webpack_require__(11);
+__webpack_require__(38);
+__webpack_require__(39);
+
+
+
+$(document).ready(function () {
+	new Vue({
+		el: '#registration',
+		data: {
+			table: null
+		},
+		mounted: function mounted() {
+			this.setupDataTable();
+			this.createEventListeners();
+		},
+
+		methods: {
+			createEventListeners: function createEventListeners() {
+				var $this = this;
+
+				$(document).on('click', '.mark-processed', function () {
+					var id = $(this).attr('data-id');
+
+					axios.post(app.baseUrl + '/admin/danh-sach-dang-ky/xu-ly', {
+						id: id
+					}).then(function (response) {
+						$this.table.draw(false);
+					}).catch(function (e) {});
+				});
+			},
+			setupDataTable: function setupDataTable() {
+				var config = __WEBPACK_IMPORTED_MODULE_0__app_constants__["a" /* datatableConfig */];
+
+				config.ajax = {
+					url: app.baseUrl + '/admin/danh-sach-dang-ky/ds',
+					type: 'POST'
+				};
+
+				config.order = [[3, 'desc']];
+				config.columns = [{
+					name: '',
+					data: null,
+					orderable: false,
+					render: function render() {
+						return '';
+					}
+				}, {
+					name: 'name',
+					data: 'name',
+					orderable: false
+				}, {
+					name: 'phone',
+					data: 'phone',
+					orderable: false
+				}, {
+					name: 'created_at',
+					data: 'created_at',
+					orderable: true
+				}, {
+					name: '',
+					data: null,
+					orderable: false,
+					render: function render(data, type, row) {
+						return parseInt(row.status) ? 'Đã xử lý' : '<span class="text-danger">Chưa xử lý</span>';
+					}
+				}, {
+					name: '',
+					data: null,
+					orderable: false,
+					render: function render(data, type, row) {
+						return parseInt(row.status) ? '' : '<a href="javascript:;" class="mark-processed" data-id="' + row.id + '">Đánh dấu đã xử lý</a>';
+					}
+				}];
+
+				this.table = $('#registration-table').DataTable(config);
+
+				var $this = this;
+				this.table.on('draw.dt', function () {
+					console.log('Indexing');
+					$this.table.column(0, { search: 'applied', order: 'applied' }).nodes().each(function (cell, i) {
+						var page = $this.table.page.info().page;
+						var length = $this.table.page.info().length;
+
+						cell.innerHTML = i + 1 + length * page;
+					});
+				});
+			}
+		}
+	});
+});
 
 /***/ })
 /******/ ]);

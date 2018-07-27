@@ -1,5 +1,9 @@
 @extends('admin.template')
 
+@section('script')
+	<script type="text/javascript" src="{{url('/')}}/assets/js/core/app.js"></script>
+@endsection
+
 @section('content')
 	<div class="panel panel-flat">
 		<div class="panel-heading">

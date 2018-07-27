@@ -20566,3 +20566,13 @@ label.display-block {
 [v-cloak]{
   display: none;
 }
+
+.dataTables_wrapper table tbody tr td img{
+  width: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+body, .page-content, .page-container, .sidebar{
+  height: 100%;
+}

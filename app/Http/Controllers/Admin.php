@@ -26,4 +26,8 @@ class Admin extends Controller
     	$request->session()->flash('configSuccess', 1);
     	return redirect()->action('Admin@index');
     }
+
+    public function test(Request $request){
+    	die(json_encode($request->all()));
+    }
 }
