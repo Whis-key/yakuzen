@@ -586,6 +586,7 @@ ul li {
   font-size: 20px;
   margin-bottom: 15px;
   line-height: 30px;
+  text-align: justify;
 }
 .probs ul li i,
 .intro ul li i {
@@ -713,6 +714,92 @@ ul li {
 }
 .map h2 {
   margin-bottom: 30px;
+}
+.post-heading h2 {
+  font-size: 25px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.post-heading div span {
+  font-size: 14px;
+  color: #545454;
+}
+.post-heading div a {
+  font-weight: 500;
+  margin-left: 15px;
+  color: #f2141c;
+}
+.post-content {
+  margin-top: 50px;
+}
+.post-content * {
+  font-family: Roboto !important;
+}
+.post-content .no_bullets {
+  border: 1px solid #ffeaeb;
+  padding: 20px 40px;
+  background-color: #fff7f8;
+}
+.post-content .no_bullets ul {
+  padding-left: 20px;
+}
+.post-content .no_bullets ul li {
+  margin-top: 8px;
+}
+.product-price {
+  padding-bottom: 10px;
+  font-size: 22px;
+}
+.product-price .number {
+  font-weight: 600;
+  font-size: 24px;
+  color: #f21d25;
+  letter-spacing: 1px;
+}
+.product-price.hotline .number {
+  letter-spacing: 0;
+}
+.gift {
+  font-size: 22px;
+  /*font-weight: 500;*/
+  line-height: 40px;
+  padding-bottom: 30px;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+}
+.gift .highlight {
+  color: #e21a21;
+  font-weight: 600;
+}
+.product-info .description {
+  font-size: 18px;
+  line-height: 33px;
+  text-align: justify;
+  padding-top: px;
+}
+.product-info .description b {
+  /*color: #e82128;*/
+}
+.product-info .pt-left {
+  width: 57%;
+}
+.product-info .pt-left .title {
+  /*text-align: center;*/
+  font-size: 25px;
+}
+.product-info .pt-right {
+  width: 35%;
+  padding-top: 0;
+}
+.product-info .pt-right .title {
+  font-size: 25px;
+}
+.product-info .qa ul li .q {
+  font-size: 21px;
+}
+.product-info .qa ul li .a {
+  font-size: 18px;
 }
 @-webkit-keyframes bling {
   from {

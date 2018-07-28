@@ -16,7 +16,7 @@
 
 				<p>{{\Illuminate\Support\Str::words($item->snippet, 30, '...')}}</p>
 
-				<a href="#">Xem thêm</a>
+				<a href="{{url('/') . '/bai-viet/' . $news->convertVietnamese($item->title) . '-' . $item->id}}">Xem thêm</a>
 			</div>
 			@endforeach
 		</div>
@@ -26,7 +26,7 @@
 
 			@foreach($hotItems as $item)
 			<div class="f-item">
-				<a href="#">
+				<a href="{{url('/') . '/bai-viet/' . $news->convertVietnamese($item->title) . '-' . $item->id}}">
 					<img src="{{url('/') . $item->thumbnail}}">
 
 					<h4>{{\Illuminate\Support\Str::words($item->title, 8, '...')}}</h4>

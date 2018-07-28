@@ -13,6 +13,7 @@ let mix = require('laravel-mix');
 
 mix.js('resources/assets/js/app.js', 'public/js')
 	.js('resources/assets/js/home.js', 'public/js')
+	.js('resources/assets/js/main.js', 'public/js')
 	.js('resources/assets/js/feedback.js', 'public/js')
 	.js('resources/assets/js/admin/registration.js', 'public/js')
 	.js('resources/assets/js/admin/feedback.list.js', 'public/js')

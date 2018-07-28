@@ -5,9 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Config;
 use App\Http\Requests\StoreConfig;
+use Illuminate\Support\Facades\Auth;
 
 class Admin extends Controller
 {
+
     public function index(){
     	$data['price'] = Config::getPrice();
     	$data['customerFeedbackVideoLink'] = Config::getFeedbackVideoLink();

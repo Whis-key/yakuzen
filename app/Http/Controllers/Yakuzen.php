@@ -41,6 +41,7 @@ class Yakuzen extends Controller
         $data['hotItems'] = $hot;
         $data['items'] = $news;
     	$data['menu'] = 'news';
+        $data['news'] = new News();
     	return \View::make('yakuzen/news')->with($data);
     }
 
@@ -51,6 +52,7 @@ class Yakuzen extends Controller
         $data['hotItems'] = $hot;
         $data['items'] = $news;
         $data['menu'] = 'qa';
+        $data['news'] = new News();
         return \View::make('yakuzen/news')->with($data);
     }
 
@@ -61,5 +63,32 @@ class Yakuzen extends Controller
         Registration::saveRegistration($name, $phone);
 
         return response(['message' => 'Registration saved'], 200);
+    }
+
+    public function apost($params){
+        $expiration = Config::getSaleOffExpiration();
+        $id = preg_replace("/[^0-9]/", "", $params);
+        $n = News::where('id', $id)->first();
+
+        if(empty($n)){
+            return redirect()->to(route('homepage'));
+        }
+
+        $data['expiration'] = $expiration;
+        $data['menu'] = $n->category ? 'qa' : 'news';
+        $data['post'] = $n;
+
+        return \View::make('yakuzen.post')->with($data);
+    }
+
+    public function product(){
+        $expiration = Config::getSaleOffExpiration();
+        $price = Config::getPrice();
+
+        $data['expiration'] = $expiration;
+        $data['price'] = $price;
+        $data['menu'] = 'product';
+
+        return \View::make('yakuzen.product')->with($data);
     }
 }

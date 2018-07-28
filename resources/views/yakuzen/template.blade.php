@@ -5,7 +5,7 @@
 	<link rel="shortcut icon" type="image/png" href="{{url('/')}}/img/banner/doctor.png"/>
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="{{url('/')}}/css/style.css">
 </head>
 <body>
 	<div class="container">
@@ -26,7 +26,7 @@
 	  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 	  crossorigin="anonymous">
 	</script>
-	<script type="text/javascript"></script>
+	<!-- <script type="text/javascript" src="{{url('/')}}/js/main.js"></script> -->
 	<script type="text/javascript">
 		window.app = {
 			baseUrl: '{{url("/")}}'

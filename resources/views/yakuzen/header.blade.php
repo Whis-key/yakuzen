@@ -13,12 +13,12 @@
 </div>
 <div class="header {{$menu!='home' && $menu!='feedback' ? 'alt' : ''}}">
 	<div class="drd">
-		<a href="{{url('/')}}"><img src="img/drd.png"></a>
+		<a href="{{url('/')}}"><img src="{{url('/')}}/img/drd.png"></a>
 	</div>
 	<div class="menu">
 		<ul>
 			<li class="{{$menu=='home' ? 'active' : ''}}"><a href="{{url('/')}}">Trang chủ</a></li>
-			<li class=""><a href="#">Trà thực dưỡng Yakuzen</a></li>
+			<li class="{{$menu=='product' ? 'active' : ''}}"><a href="{{url('/')}}/gioi-thieu-san-pham">Giới thiệu sản phẩm</a></li>
 			<li class="{{$menu=='news' ? 'active' : ''}}"><a href="{{url('/')}}/kien-thuc-mat-ngu">Kiến thức mất ngủ</a></li>
 			<li class="{{$menu=='qa' ? 'active' : ''}}"><a href="{{url('/')}}/tu-van">Tư vấn</a></li>
 			<li class="{{$menu=='feedback' ? 'active' : ''}}"><a href="{{url('/')}}/lien-he">Liên hệ</a></li>
