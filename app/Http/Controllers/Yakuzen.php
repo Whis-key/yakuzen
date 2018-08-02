@@ -13,14 +13,14 @@ class Yakuzen extends Controller
 {
     public function index(){
         $expiration = Config::getSaleOffExpiration();
-        $feedbackVideoLink = Config::getFeedBackVideoLink();
+        $feedbackVideoLinks = Config::getFeedBackVideoLinks();
         $feedbacks = CustomerFeedback::getAll();
         $news = News::get(null, 3, 0, true);
 
         $data['nobj'] = new News();
         $data['news'] = $news;
         $data['feedbacks'] = $feedbacks;
-        $data['feedbackVideoLink'] = $feedbackVideoLink;
+        $data['feedbackVideoLink'] = $feedbackVideoLinks;
         $data['expiration'] = $expiration;
     	$data['menu'] = 'home';
     	

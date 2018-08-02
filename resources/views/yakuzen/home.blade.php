@@ -73,7 +73,7 @@
 				</div>
 
 				<div class="s-right">
-					<p><b>Trà Thực Dưỡng là sản phẩm đem lại cho khách hàng một lối sống đẹp, lành mạnh theo nguyên lý thực dưỡng, sử dụng những nguyên liệu thực dưỡng, giúp khách hàng có một cơ thể khỏe mạnh từ bên trong</b></p>
+					<p class="hidden-on-small-screen"><b>Trà Thực Dưỡng là sản phẩm đem lại cho khách hàng một lối sống đẹp, lành mạnh theo nguyên lý thực dưỡng, sử dụng những nguyên liệu thực dưỡng, giúp khách hàng có một cơ thể khỏe mạnh từ bên trong</b></p>
 
 					<p>Trà thực dưỡng được nghiên cứu và điều chế dựa theo phương pháp nguyên lý Thực dưỡng từ Nhật Bản - nhằm đưa cơ thể con người trở về quân bình âm - dương. Dưới quan điểm của thực dưỡng, mọi bệnh tật đều xuất phát từ sai lầm của con người, trước tiên là việc tiêu thụ thực phẩm đi   ngược lại với quy luật của vũ trụ khiến cơ thể bị mất quân bình âm dương.</p>
 				</div>
@@ -84,49 +84,6 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- <div class="i-block odd probs">
-		<div class="pt-left">
-			<img src="{{url('/')}}/img/insomnia.png">
-		</div>
-
-		<div class="pt-right">
-			<h2 class="title">Vấn đề <span class="highlight">có thể bạn đang gặp phải</span></h2>
-
-			<ul>
-				<li><i class="fa fa-square"></i> <b>Mất ngủ</b> hành hạ triền miên, khiến thần trí suy nhược</li>
-				<li><i class="fa fa-square"></i> Dùng mọi giải pháp vẫn <b>không hiệu quả</b></li>
-				<li><i class="fa fa-square"></i> Quá lạm dụng an thần mà dẫn tới lệ thuộc, không sử dụng thì không ngủ được</li>
-				<li><i class="fa fa-square"></i> <b>Cáu gắt, khó chịu</b> với mọi người xung quanh bởi vì mệt mỏi thần kinh do mất ngủ</li>
-			</ul>
-
-			<a href="{{url('/')}}/lien-he" class="button">Đăng ký nhận tư vấn ngay</a>
-		</div>
-
-		<div class="clear"></div>
-	</div> -->
-
-	<!-- <div class="i-block intro">
-		<div class="pt-left">
-			<h2 class="title">Trà Yakuzen - <span class="highlight">Giải pháp hàng đầu</span> cho bệnh mất ngủ</h2>
-
-			<ul>
-				<li><i class="fa fa-square"></i> Lấy lại giấc ngủ ngon, sâu giấc chỉ từ 10 ngày sử dụng</li>
-				<li><i class="fa fa-square"></i> Giảm lượng cholesterol và triglyceride giúp giảm khả năng đột quỵ, tai biến, tim mạch</li>
-				<li><i class="fa fa-square"></i> Kiểm soát căng thẳng, lo lắng và thay đổi trạng thái, có tác dụng bảo vệ mạnh mẽ đối với thần kinh và hệ thống thần kinh khỏi bị hư hỏng</li>
-				<li><i class="fa fa-square"></i> An thần, giảm stress, mệt mỏi giúp tinh thần thư thái, nâng cao chất lượng cuộc sống</li>
-			</ul>
-
-			<a href="{{url('/')}}/lien-he" class="button">Nhận cuộc gọi tư vấn mua hàng</a>
-		</div>
-
-		<div class="pt-right">
-			<img src="{{url('/')}}/img/prod.png">
-		</div>
-
-		<div class="clear"></div>
-	</div> -->
-
 
 	<div class="i-block odd">
 		<h2 class="title"><span class="highlight">THỰC Y TRÀ YAKUZEN</span> DÙNG CHO NHỮNG AI?</h2>
@@ -206,7 +163,7 @@
 				<a href="#" class="slide-trigger b-left" data-trigger="quote"><i class="fa fa-angle-left"></i></a>
 				<a href="#" class="slide-trigger b-right" data-trigger="quote"><i class="fa fa-angle-right"></i></a>
 
-				<div class="slider" style="width: {{sizeof($feedbacks)*50 . 'vw'}}" id="quote" data-left="0" data-right="{{sizeof($feedbacks) - 2}}">
+				<div class="slider" style="width: {{sizeof($feedbacks)*80 . 'vw'}}" id="quote" data-left="0" data-right="{{sizeof($feedbacks) - 2}}">
 					@foreach ($feedbacks as $feedback)
 						<div class="item quote">
 							<div class="cus">
@@ -226,7 +183,14 @@
 			<div class="video center">
 				<h3>Video chia sẻ của khách hàng đã sử dụng Yakuzen</h3>
 
-				<iframe width="800" height="450" src="{{$feedbackVideoLink}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<div class="sl-row">
+					<a href="#" class="slide-trigger b-left prev-video" data-trigger="vid"><i class="fa fa-angle-left"></i></a>
+					<a href="#" class="slide-trigger b-right next-video" data-trigger="vid"><i class="fa fa-angle-right"></i></a>
+					
+					<div class="slider" id="fb-video" data-index="0" data-videos="{{implode(';', $feedbackVideoLink)}}">
+						<iframe width="100%" height="500" src="{{$feedbackVideoLink[0]}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen data-index="0"></iframe>
+					</div>
+				</div>
 			</div>
 
 

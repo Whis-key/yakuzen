@@ -15,9 +15,9 @@ class Config extends Model
     	return $cf->value;
     }
 
-    public static function getFeedbackVideoLink(){
+    public static function getFeedbackVideoLinks(){
     	$cf = Config::where('name', 'feedback_video_link')->first();
-    	return $cf->value;
+    	return explode(';', $cf->value);
     }
 
     public static function getPrice(){

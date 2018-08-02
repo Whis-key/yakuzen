@@ -8,6 +8,21 @@ body * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+body.fix-menu {
+  padding-top: 100px;
+}
+body.fix-menu .header {
+  position: fixed;
+  z-index: 100;
+  background: #fff;
+  width: 100%;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  top: 0;
+  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.12156863);
+          box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.12156863);
+  min-width: 1280px;
+}
 a,
 a:hover,
 a:focus {
@@ -30,6 +45,8 @@ ul li {
 }
 .header {
   padding: 30px 11% 5px 11%;
+  -webkit-transition: padding-top 0.5s, padding-bottom 0.5s;
+  transition: padding-top 0.5s, padding-bottom 0.5s;
 }
 .header.alt {
   -webkit-box-shadow: 0px 3px 5px #e8e8e8;
@@ -292,7 +309,7 @@ ul li {
   float: left;
   padding-left: 0;
   max-width: 800px;
-  margin-right: 95px;
+  margin-right: 100px;
   min-width: 410px;
 }
 .i-block .content .item.quote.last {
@@ -420,7 +437,7 @@ ul li {
 .contact-form img {
   position: absolute;
   height: 100%;
-  left: -100px;
+  left: 0;
   z-index: 0;
 }
 .contact-form .block {
@@ -488,7 +505,7 @@ ul li {
 .contact-form .action {
   position: absolute;
   bottom: 8.5%;
-  left: 720px;
+  left: 660px;
 }
 .error-message {
   display: block;
@@ -502,7 +519,7 @@ ul li {
   position: fixed;
   padding: 8px 14px 9px;
   color: #fff;
-  right: 122px;
+  right: 80px;
   bottom: 30px;
   font-weight: 500;
   font-size: 18px;
@@ -514,7 +531,7 @@ ul li {
   position: fixed;
   padding: 10px 11px 8px;
   color: #fff;
-  right: 75px;
+  left: 30px;
   bottom: 30px;
   font-weight: 500;
   font-size: 18px;
@@ -868,7 +885,7 @@ ul li {
 }
 .sl-row .slide-trigger {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -931,14 +948,15 @@ ul li {
 }
 .s-line {
   position: relative;
-  min-width: 1185px;
+  /*min-width: 1185px;*/
 }
 .s-line .s-left {
   width: 44%;
   float: left;
+  margin-right: 5%;
 }
 .s-line .s-right {
-  width: 45%;
+  width: 50%;
   float: left;
   padding-top: 100px;
 }
@@ -947,6 +965,7 @@ ul li {
 }
 .s-line p {
   font-size: 21px;
+  text-align: justify;
 }
 .s-line img.rose {
   width: 100%;
@@ -975,7 +994,7 @@ ul li {
   border-radius: 0;
   -webkit-transform: none;
           transform: none;
-  top: 190px;
+  top: 150px;
   left: 150px;
 }
 @-webkit-keyframes bling {

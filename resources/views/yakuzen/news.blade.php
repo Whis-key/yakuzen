@@ -4,6 +4,10 @@
 	Trà thực dưỡng Yakuzen | Kiến thức mất ngủ
 @endsection
 
+@section('script')
+	<script type="text/javascript" src="{{url('/')}}/js/main.js"></script>
+@endsection
+
 @section('content')
 	<div class="i-block news-block">
 		<div class="left">

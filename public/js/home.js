@@ -47206,6 +47206,16 @@ $(window).scroll(function () {
 	} else {
 		$('.back2top').fadeOut();
 	}
+
+	if ($(window).scrollTop() > 50) {
+		$('body').addClass('fix-menu');
+	} else {
+		$('body').removeClass('fix-menu');
+	}
+});
+
+$(window).resize(function () {
+	hideElementsOnSmallScreen();
 });
 
 $('.back2top').click(function () {
@@ -47240,7 +47250,7 @@ $('#contact-form input, #contact-form textarea').keyup(function (e) {
 function scrollToContactForm() {
 	// Scroll
 	$('html,body').animate({
-		scrollTop: $("#contact-form .form").offset().top - 50
+		scrollTop: $("#contact-form .form").offset().top - 150
 	}, 'slow');
 }
 
@@ -47272,6 +47282,15 @@ function setUpErrorTimeout() {
 }
 
 var tmOut = null;
+
+function hideElementsOnSmallScreen() {
+	if ($(window).width() < 1450) {
+		$('.hidden-on-small-screen').fadeOut();
+	} else {
+		$('.hidden-on-small-screen').fadeIn();
+	}
+}
+hideElementsOnSmallScreen();
 
 var setupTimer = function setupTimer() {
 	var d = 0;
@@ -47363,8 +47382,48 @@ $(document).ready(function () {
 		}
 	});
 
+	var videos = $('#fb-video').attr('data-videos').split(';');
+
+	$('.next-video').click(function () {
+		var i = parseInt($('#fb-video').attr('data-index'));
+		if (i < videos.length - 1) {
+			$('#fb-video iframe').attr('src', videos[i + 1]);
+			$('#fb-video').attr('data-index', i + 1);
+		} else {
+			$('#fb-video iframe').attr('src', videos[0]);
+			$('#fb-video').attr('data-index', 0);
+		}
+	});
+
+	$('.prev-video').click(function () {
+		var i = parseInt($('#fb-video').attr('data-index'));
+		if (i > 0) {
+			$('#fb-video iframe').attr('src', videos[i - 1]);
+			$('#fb-video').attr('data-index', i - 1);
+		} else {
+			$('#fb-video iframe').attr('src', videos[videos.length - 1]);
+			$('#fb-video').attr('data-index', videos.length - 1);
+		}
+	});
+
+	$(window).resize(function () {
+		setCustomerFbPOsition();
+		setTimeout(function () {
+			$('#quote').css({ marginLeft: '0' });
+		}, 100);
+	});
+
+	setCustomerFbPOsition();
 	Object(__WEBPACK_IMPORTED_MODULE_0__common_js__["setupTimer"])();
 });
+
+function setCustomerFbPOsition() {
+	if ($(window).width() < 1300) {
+		$('.i-block .customer').css({ marginLeft: '-50px' });
+	} else {
+		$('.i-block .customer').css({ marginLeft: '0' });
+	}
+}
 
 function scrollToContactForm() {
 	// Scroll

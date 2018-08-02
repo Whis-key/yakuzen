@@ -62,8 +62,18 @@ $(window).scroll(function(){
 	} else {
 		$('.back2top').fadeOut();
 	}
+
+	if($(window).scrollTop() > 50){
+		$('body').addClass('fix-menu');
+	} else {
+		$('body').removeClass('fix-menu');
+	}
 });
 
+
+$(window).resize(function(){
+	hideElementsOnSmallScreen();
+});
 
 $('.back2top').click(function(){
 	$('html,body').animate({
@@ -100,7 +110,7 @@ $('#contact-form input, #contact-form textarea').keyup(function(e){
 function scrollToContactForm(){
 	// Scroll
     $('html,body').animate({
-        scrollTop: $("#contact-form .form").offset().top - 50
+        scrollTop: $("#contact-form .form").offset().top - 150
     }, 'slow');
 }
 
@@ -132,6 +142,16 @@ function setUpErrorTimeout(){
 }
 
 var tmOut = null;
+
+function hideElementsOnSmallScreen(){
+	if($(window).width() < 1450){
+		$('.hidden-on-small-screen').fadeOut();
+	} else {
+		$('.hidden-on-small-screen').fadeIn();
+	}
+}
+hideElementsOnSmallScreen();
+
 
 export var setupTimer = function(){
 	var d = 0;

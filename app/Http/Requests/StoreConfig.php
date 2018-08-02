@@ -26,7 +26,7 @@ class StoreConfig extends FormRequest
         return [
             'price' => 'required|numeric',
             'expiration' => 'required|numeric',
-            'video' => 'required|url'
+            'video' => 'required'
         ];
     }
 

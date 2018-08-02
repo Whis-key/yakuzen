@@ -12,7 +12,7 @@ class Admin extends Controller
 
     public function index(){
     	$data['price'] = Config::getPrice();
-    	$data['customerFeedbackVideoLink'] = Config::getFeedbackVideoLink();
+    	$data['customerFeedbackVideoLink'] = implode(';', Config::getFeedbackVideoLinks());
     	$data['expiration'] = Config::getSaleOffExpiration();
     	$data['menu'] = 'index';
     	return \View::make('admin.index')->with($data);
