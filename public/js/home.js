@@ -47193,6 +47193,12 @@ $('.contact-submit').click(function () {
 	}
 });
 
+$('#go2questions').click(function () {
+	$('html,body').animate({
+		scrollTop: $("#questions").offset().top - 50
+	}, 'slow');
+});
+
 $(window).scroll(function () {
 	var top = $(window).scrollTop();
 	if (top > 1000) {
@@ -47329,6 +47335,32 @@ $(document).ready(function () {
 	$('.register').click(function () {
 		scrollToContactForm();
 		$("#contact-form .form .form-group:first input").focus();
+	});
+
+	$('.slide-trigger').click(function () {
+		var el = '#' + $(this).attr('data-trigger');
+
+		var wid = $(el + ' .quote').width();
+
+		if ($(this).hasClass('b-right')) {
+			var rEls = parseInt($(el).attr('data-right'));
+			var lEls = parseInt($(el).attr('data-left'));
+			if (rEls > 0) {
+				var mrLeft = -1 * (lEls + 1) * (wid + 102);
+				$(el).animate({ marginLeft: mrLeft + 'px' }, 1000);
+				$(el).attr('data-left', lEls + 1);
+				$(el).attr('data-right', rEls - 1);
+			} else {}
+		} else if ($(this).hasClass('b-left')) {
+			var rEls = parseInt($(el).attr('data-right'));
+			var lEls = parseInt($(el).attr('data-left'));
+			if (lEls > 0) {
+				var mrLeft = -1 * (lEls - 1) * (wid + 102);
+				$(el).animate({ marginLeft: mrLeft + 'px' }, 1000);
+				$(el).attr('data-left', lEls - 1);
+				$(el).attr('data-right', rEls + 1);
+			} else {}
+		}
 	});
 
 	Object(__WEBPACK_IMPORTED_MODULE_0__common_js__["setupTimer"])();

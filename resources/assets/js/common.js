@@ -49,6 +49,12 @@ $('.contact-submit').click(function(){
 	}
 });
 
+$('#go2questions').click(function(){
+	$('html,body').animate({
+        scrollTop: $("#questions").offset().top - 50
+    }, 'slow');
+});
+
 $(window).scroll(function(){
 	var top = $(window).scrollTop();
 	if(top > 1000){

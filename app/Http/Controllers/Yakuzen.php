@@ -15,8 +15,9 @@ class Yakuzen extends Controller
         $expiration = Config::getSaleOffExpiration();
         $feedbackVideoLink = Config::getFeedBackVideoLink();
         $feedbacks = CustomerFeedback::getAll();
-        $news = News::get(3, 0);
+        $news = News::get(null, 3, 0, true);
 
+        $data['nobj'] = new News();
         $data['news'] = $news;
         $data['feedbacks'] = $feedbacks;
         $data['feedbackVideoLink'] = $feedbackVideoLink;
@@ -85,6 +86,9 @@ class Yakuzen extends Controller
         $expiration = Config::getSaleOffExpiration();
         $price = Config::getPrice();
 
+        $hot = News::get(0, 6, 0, true);
+        $data['news'] = new News();
+        $data['hotItems'] = $hot;
         $data['expiration'] = $expiration;
         $data['price'] = $price;
         $data['menu'] = 'product';

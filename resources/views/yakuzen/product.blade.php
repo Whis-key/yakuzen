@@ -54,7 +54,7 @@
 		<div class="content">
 
 			<div class="c-row">
-				<div class="item triple">
+				<div class="item quart">
 					<div class="center">
 						<img src="{{url('/')}}/img/rece/rece1.jpg">
 					</div>
@@ -62,7 +62,7 @@
 					<p class="desc">An thần tốt hơn cả tâm sen, mang đến giấc ngủ sâu và ngon hơn</p>
 				</div>
 
-				<div class="item triple">
+				<div class="item quart">
 					<div class="center">
 						<img src="{{url('/')}}/img/rece/rece2.jpg">
 					</div>
@@ -70,25 +70,27 @@
 					<p class="desc">Đào thải gốc tự do, kháng độc tố, giảm tối đa các triệu chứng đau đầu</p>
 				</div>
 
-				<div class="item triple">
+				<div class="item quart">
 					<div class="center">
 						<img src="{{url('/')}}/img/rece/rece3.jpg">
 					</div>
 					<h4 class="main">Thiên Chi Ma</h4>
 					<p class="desc">Lọc, bổ sung dưỡng chất cho máu, điều trị suy giảm trí nhớ, chữa chóng mặt, choáng váng, đau đầu</p>
 				</div>
-			</div>
 
-			<div class="c-row">
-				<div class="item triple">
+				<div class="item quart">
 					<div class="center">
 						<img src="{{url('/')}}/img/rece/rece4.jpg">
 					</div>
 					<h4 class="main">Giảo cổ lam</h4>
 					<p class="desc">Tiêu mỡ, hạ mỡ máu, ổn định đường huyết và huyết áp</p>
 				</div>
+			</div>
 
-				<div class="item triple">
+			<div class="clear"></div>
+
+			<div class="c-row">
+				<div class="item quart">
 					<div class="center">
 						<img src="{{url('/')}}/img/rece/rece5.jpg">
 					</div>
@@ -96,17 +98,15 @@
 					<p class="desc">Cân bằng hormone, điều chỉnh trạng thái cơ thể</p>
 				</div>
 
-				<div class="item triple">
+				<div class="item quart">
 					<div class="center">
 						<img src="{{url('/')}}/img/rece/rece6.jpg">
 					</div>
 					<h4 class="main">Gạo lứt</h4>
 					<p class="desc">Phòng chống loãng xương, viêm khớp, giảm cholesteron, ngăn đông máu, tốt cho tim mạch</p>
 				</div>
-			</div>
 
-			<div class="c-row">
-				<div class="item triple">
+				<div class="item quart">
 					<div class="center">
 						<img src="{{url('/')}}/img/rece/rece7.jpg">
 					</div>
@@ -114,7 +114,7 @@
 					<p class="desc">Thanh nhiệt, giải độc, làm mát gan, xóa mờ vết nám da</p>
 				</div>
 
-				<div class="item triple">
+				<div class="item quart">
 					<div class="center">
 						<img src="{{url('/')}}/img/rece/rece8.jpg">
 					</div>
@@ -125,96 +125,25 @@
 
 			<div class="clear"></div>
 		</div>
+
+		<div class="action">
+			<a href="{{url('/')}}/lien-he" target="_blank" class="button">Đăng ký tư vấn</a>
+		</div>
 	</div>
 
 	<div class="i-block product-info probs">
-		<div class="pt-left" style="text-align: justify;">
-			<h2 class="title">Câu hỏi thường gặp</h2>
+		<div class="pt-left">
 
-			<div class="qa">
+
+			<div class="tabs">
 				<ul>
-					<li>
-						<h3 class="q">Câu 1: Uống Thực Y Trà Yakuzennhư thế nào?</h3>
-						<p class="a">
-							Nên sử dụng: 2 lít nước trà thay 2 lít nước lọc mỗi ngày.
-							<br>
-							Trong quá trình sử dụng nên gọi hotline để được Dược sỹ tư vấn cách sử dụng, chế độ dinh dưỡng, hiệu chỉnh liều dùng trong suốt quá trình sử dụng.
-						</p>
-					</li>
-
-					<li>
-						<h3 class="q">Câu 2: Dùng bao lâu có hiệu quả?</h3>
-						<p class="a">
-							Theo kinh nghiệm, thông thường:
-							<br>
-							(3 tuần đầu: 1 hộp): Không mệt mỏi khi thức dậy.
-							<br>
-							Lấy lại cảm giác thoải mái, nhẹ đầu óc, dễ chịu và không mệt mỏi khi tỉnh dậy. Bắt đầu dễ vào giấc hơn. Sau khi thức dậy thấy khỏe mạnh, tỉnh táo để làm việc, học tập.
-							<br><br>
-							(1 tháng tiếp theo: 2 hộp): Dễ ngủ, ngủ sâu.
-							<br>
-							Có cảm giác buồn ngủ, dễ vào giấc hơn, giảm số lần tỉnh giấc giữa đêm và bắt đầu gia tăng số giờ ngủ.
-							<br><br>
-							(1 tháng tiếp theo: 1 hộp): Gia tăng số giờ ngủ, tạo giấc ngủ tự nhiên.
-							<br>
-							Tạo giấc ngủ tự nhiên 6 -7 tiếng/ đêm, không mệt mỏi khi thức dậy và bắt đầu phục hồi hoạt động điều tiết giấc ngủ tự nhiên của hệ thần kinh.
-							<br><br>
-							(1 tháng tiếp theo: 1 hộp): Duy trì giấc ngủ ngon, ổn đinh, bền vững.
-							<br><br>
-							Sau 2 - 3 tháng, để duy trì giấc ngủ ổn định, hạn chế mất ngủ quay trở lại, phục hồi thần kinh nên uống 1 cốc vào buổi tối
-						</p>
-					</li>
-
-					<li>
-						<h3 class="q">Câu 3: Uống lâu ngày có an toàn không?</h3>
-						<p class="a">
-							Câu trả lời là hoàn toàn an toàn. Thậm chí, người dùng sẽ cảm thấy khỏe khoắn hơn bao giờ hết, tinh thần luôn sảng khoái, thần trí rõ ràng.
-						</p>
-					</li>
-
-					<li>
-						<h3 class="q">Câu 4: Có uống chung Thực Y Trà với thuốc Nam, thuốc Bắc không?</h3>
-						<p class="a">
-							Nên ngừng thuốc Nam, thuốc Bắc sau đó mới dùng Thực Y Trà để tránh gây ảnh hưởng đến hiệu quả của Thực Y Trà Yakuzen.
-						</p>
-					</li>
-
-					<li>
-						<h3 class="q">Câu 5: Khi ngủ ngon rồi thì có cần uống nữa không?</h3>
-						<p class="a">
-							Mất ngủ là bệnh lý dễ tái phát nên các chuyên gia khuyên bạn nên sử dụng thêm 1 cốc thực y trà Yakuzen vào buổi tối trong 3 tháng tiếp theo để giúp hệ thần kinh khỏe mạnh, duy trì giấc ngủ bền vững.
-						</p>
-					</li>
-
-					<li>
-						<h3 class="q">Câu 6: Trẻ sơ sinh có dùng được không?</h3>
-						<p class="a">
-							Trẻ sơ sinh hoàn toàn vẫn dùng được.
-						</p>
-					</li>
-
-					<li>
-						<h3 class="q">Câu 7: Đang uống Thực Y Trà Yakuzen ngủ ngon, tự nhiên 1 – 2 hôm nay vẫn uống nhưng không ngủ được?</h3>
-						<p class="a">
-							Trong giai đoạn này, não bộ đang phục hồi nhưng chưa ổn định hoàn toàn nên giấc ngủ còn chập chờn. Bạn nên kiên trì sử dụng, thực tế, sau vài ngày, giấc ngủ sẽ quay trở lại nhé. Các chuyên gia của chúng tôi sẽ luôn bên cạnh theo dõi tình hình của bạn.
-						</p>
-					</li>
-
-					<li>
-						<h3 class="q">Câu 8: Bị huyết áp cao, dùng Thực Y Trà Yakuzen có được không?</h3>
-						<p class="a">
-							Khác với các sản phẩm khác trên thị trường, Thực Y Trà Yakuzen tạo giấc ngủ ngon, rất phù hợp cho người huyết áp cao. BỞI VÌ, Thực Y Trà Yakuzen tác động trực tiếp vào nguyên nhân gây ra mất ngủ ở người huyết áp cao.
-						</p>
-					</li>
+					<li class="active"><a href="#">Thông tin sản phẩm</a></li>
+					<li><a href="#" id="go2questions">Câu hỏi thường gặp</a></li>
+					<div class="clear"></div>
 				</ul>
 			</div>
-		</div>
 
-		<div class="pt-right">
-
-			<h2 class="title">Thông tin sản phẩm</h2>
-
-			<p class="description">
+			<p class="description" style="padding-left: 12px;">
 				Bạn bị <b>khó ngủ, ngủ không sâu</b>, lên giường nằm lăn qua lăn lại vài tiếng mà mắt vẫn mở "thao láo", chỉ cần tiếng động nhỏ cũng làm bạn tỉnh giấc. 
 
 				Dù tình trạng này mới xuất hiện vài ngày cũng đã khiến bạn cảm thấy rất <b>mệt mỏi</b>, sáng dậy không thể làm việc nổi, không muốn giao tiếp, chuyện trò cùng ai. <b>Mắt thâm, da xám xịt, đầu óc căng và đau nhức</b>, lúc nào cũng muốn nằm nghỉ dù nằm cũng chẳng ngủ được.
@@ -229,6 +158,109 @@
 
 				Thấu hiểu những nỗi vất vả và những khó khăn khi điều trị chứng mất ngủ, các chuyên gia hàng đầu ngành Dược đã cho ra đời sản phẩm <b>Yakuzen</b> với mong muốn giúp người mất ngủ tìm lại giấc ngủ ngon, không còn mệt mỏi khi thức dậy, hạn chế lệ thuộc thuốc an thần.
 			</p>
+
+
+			<div style="padding-left: 12px;margin-top: 100px;" id="questions">
+				<h2 class="title">Câu hỏi thường gặp</h2>
+
+				<div class="qa">
+					<ul>
+						<li>
+							<h3 class="q">Câu 1: Uống Thực Y Trà Yakuzennhư thế nào?</h3>
+							<p class="a">
+								Nên sử dụng: 2 lít nước trà thay 2 lít nước lọc mỗi ngày.
+								<br>
+								Trong quá trình sử dụng nên gọi hotline để được Dược sỹ tư vấn cách sử dụng, chế độ dinh dưỡng, hiệu chỉnh liều dùng trong suốt quá trình sử dụng.
+							</p>
+						</li>
+
+						<li>
+							<h3 class="q">Câu 2: Dùng bao lâu có hiệu quả?</h3>
+							<p class="a">
+								Theo kinh nghiệm, thông thường:
+								<br>
+								(3 tuần đầu: 1 hộp): Không mệt mỏi khi thức dậy.
+								<br>
+								Lấy lại cảm giác thoải mái, nhẹ đầu óc, dễ chịu và không mệt mỏi khi tỉnh dậy. Bắt đầu dễ vào giấc hơn. Sau khi thức dậy thấy khỏe mạnh, tỉnh táo để làm việc, học tập.
+								<br><br>
+								(1 tháng tiếp theo: 2 hộp): Dễ ngủ, ngủ sâu.
+								<br>
+								Có cảm giác buồn ngủ, dễ vào giấc hơn, giảm số lần tỉnh giấc giữa đêm và bắt đầu gia tăng số giờ ngủ.
+								<br><br>
+								(1 tháng tiếp theo: 1 hộp): Gia tăng số giờ ngủ, tạo giấc ngủ tự nhiên.
+								<br>
+								Tạo giấc ngủ tự nhiên 6 -7 tiếng/ đêm, không mệt mỏi khi thức dậy và bắt đầu phục hồi hoạt động điều tiết giấc ngủ tự nhiên của hệ thần kinh.
+								<br><br>
+								(1 tháng tiếp theo: 1 hộp): Duy trì giấc ngủ ngon, ổn đinh, bền vững.
+								<br><br>
+								Sau 2 - 3 tháng, để duy trì giấc ngủ ổn định, hạn chế mất ngủ quay trở lại, phục hồi thần kinh nên uống 1 cốc vào buổi tối
+							</p>
+						</li>
+
+						<li>
+							<h3 class="q">Câu 3: Uống lâu ngày có an toàn không?</h3>
+							<p class="a">
+								Câu trả lời là hoàn toàn an toàn. Thậm chí, người dùng sẽ cảm thấy khỏe khoắn hơn bao giờ hết, tinh thần luôn sảng khoái, thần trí rõ ràng.
+							</p>
+						</li>
+
+						<li>
+							<h3 class="q">Câu 4: Có uống chung Thực Y Trà với thuốc Nam, thuốc Bắc không?</h3>
+							<p class="a">
+								Nên ngừng thuốc Nam, thuốc Bắc sau đó mới dùng Thực Y Trà để tránh gây ảnh hưởng đến hiệu quả của Thực Y Trà Yakuzen.
+							</p>
+						</li>
+
+						<li>
+							<h3 class="q">Câu 5: Khi ngủ ngon rồi thì có cần uống nữa không?</h3>
+							<p class="a">
+								Mất ngủ là bệnh lý dễ tái phát nên các chuyên gia khuyên bạn nên sử dụng thêm 1 cốc thực y trà Yakuzen vào buổi tối trong 3 tháng tiếp theo để giúp hệ thần kinh khỏe mạnh, duy trì giấc ngủ bền vững.
+							</p>
+						</li>
+
+						<li>
+							<h3 class="q">Câu 6: Trẻ sơ sinh có dùng được không?</h3>
+							<p class="a">
+								Trẻ sơ sinh hoàn toàn vẫn dùng được.
+							</p>
+						</li>
+
+						<li>
+							<h3 class="q">Câu 7: Đang uống Thực Y Trà Yakuzen ngủ ngon, tự nhiên 1 – 2 hôm nay vẫn uống nhưng không ngủ được?</h3>
+							<p class="a">
+								Trong giai đoạn này, não bộ đang phục hồi nhưng chưa ổn định hoàn toàn nên giấc ngủ còn chập chờn. Bạn nên kiên trì sử dụng, thực tế, sau vài ngày, giấc ngủ sẽ quay trở lại nhé. Các chuyên gia của chúng tôi sẽ luôn bên cạnh theo dõi tình hình của bạn.
+							</p>
+						</li>
+
+						<li>
+							<h3 class="q">Câu 8: Bị huyết áp cao, dùng Thực Y Trà Yakuzen có được không?</h3>
+							<p class="a">
+								Khác với các sản phẩm khác trên thị trường, Thực Y Trà Yakuzen tạo giấc ngủ ngon, rất phù hợp cho người huyết áp cao. BỞI VÌ, Thực Y Trà Yakuzen tác động trực tiếp vào nguyên nhân gây ra mất ngủ ở người huyết áp cao.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="pt-right news-block2 news-block">
+			<h3 class="right-title">Kiến thức bạn mất ngủ</h3>
+
+			@foreach($hotItems as $item)
+			<div class="f-item">
+				<a href="{{url('/') . '/bai-viet/' . $news->convertVietnamese($item->title) . '-' . $item->id}}">
+					<img src="{{url('/') . $item->thumbnail}}">
+
+					<h4>{{\Illuminate\Support\Str::words($item->title, 10, '...')}}</h4>
+				</a>
+
+				<div class="clear"></div>
+			</div>
+			@endforeach
+
+			<h4 class="right-title" style="margin-bottom: 10px;margin-top: 40px">Fanpage</h4>
+
+			<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FbiquyetngungonNhatBan&amp;tabs&amp;width=320&amp;height=210&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=481481692186545" width="330" height="220" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
 		</div>
 
 		<div class="clear"></div>

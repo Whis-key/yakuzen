@@ -25,17 +25,67 @@
 			<h2>Bí quyết sống khỏe từ Nhật Bản</h2>
 
 			<p>Trà Yakuzen với các thành phần hoàn toàn tự nhiên, nhờ đó giúp bạn không những có được giấc ngủ ngon và sâu mà còn đem lại vóc dáng như mong đợi.</p>
-
-			<!-- <div class="price">
-				<span>Chỉ với</span>
-			<span class="number"> 1.438.000đ</span>/hộp
-			</div> -->
 		</div>
 
 		<a href="{{url('/')}}/lien-he" target="_blank" class="button">Đăng ký tư vấn</a>
 	</div>
 
-	<div class="i-block odd probs">
+	<div class="i-block odd">
+		<h2 class="title">Vấn đề <span class="highlight">có thể bạn đang gặp phải</span></h2>
+
+		<div class="content">
+			<div class="c-row">
+				<div class="card-item">
+					<h4><b>Mất ngủ</b> hành hạ triền miên, khiến thần trí suy nhược</h4>
+				</div>
+
+				<div class="card-item">
+					<h4>Dùng mọi giải pháp vẫn <b>không hiệu quả</b></h4>
+				</div>
+
+				<div class="card-item">
+					<h4>Quá lạm dụng an thần mà dẫn tới lệ thuộc, không sử dụng thì không ngủ được</h4>
+				</div>
+
+				<div class="card-item">
+					<h4><b>Cáu gắt, khó chịu</b> với mọi người xung quanh bởi vì mệt mỏi thần kinh do mất ngủ</h4>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<div class="i-block">
+		<h2 class="title">Trà Yakuzen - <span class="highlight">Giải pháp hàng đầu</span> cho bệnh mất ngủ</h2>
+
+		<div class="content">
+			<div class="s-line">
+				<div class="s-left">
+					<img src="{{url('/')}}/img/rose.png" class="rose">
+
+					<div class="adv">
+						<h4>Công dụng chính</h4>
+						<ul>
+							<li>Lấy lại giấc ngủ ngon, sâu giấc chỉ từ 10 ngày sử dụng</li>
+							<li>An thần, giảm stress, mệt mỏi giúp tinh thần thư thái, nâng cao chất lượng cuộc sống</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="s-right">
+					<p><b>Trà Thực Dưỡng là sản phẩm đem lại cho khách hàng một lối sống đẹp, lành mạnh theo nguyên lý thực dưỡng, sử dụng những nguyên liệu thực dưỡng, giúp khách hàng có một cơ thể khỏe mạnh từ bên trong</b></p>
+
+					<p>Trà thực dưỡng được nghiên cứu và điều chế dựa theo phương pháp nguyên lý Thực dưỡng từ Nhật Bản - nhằm đưa cơ thể con người trở về quân bình âm - dương. Dưới quan điểm của thực dưỡng, mọi bệnh tật đều xuất phát từ sai lầm của con người, trước tiên là việc tiêu thụ thực phẩm đi   ngược lại với quy luật của vũ trụ khiến cơ thể bị mất quân bình âm dương.</p>
+				</div>
+
+				<div class="clear"></div>
+
+				<img src="{{url('/')}}/img/s-line.png" class="ov">
+			</div>
+		</div>
+	</div>
+
+	<!-- <div class="i-block odd probs">
 		<div class="pt-left">
 			<img src="{{url('/')}}/img/insomnia.png">
 		</div>
@@ -54,9 +104,9 @@
 		</div>
 
 		<div class="clear"></div>
-	</div>
+	</div> -->
 
-	<div class="i-block intro">
+	<!-- <div class="i-block intro">
 		<div class="pt-left">
 			<h2 class="title">Trà Yakuzen - <span class="highlight">Giải pháp hàng đầu</span> cho bệnh mất ngủ</h2>
 
@@ -75,140 +125,15 @@
 		</div>
 
 		<div class="clear"></div>
-	</div>
-
-	<!-- <div class="i-block odd">
-		<h2 class="title">Công dụng <span class="highlight">trà Yakuzen</span></h2>
-
-
-		<div class="content">
-			<div class="c-row">
-				<div class="item">
-					<img src="{{url('img/uses/uses1.png')}}">
-					<h4 class="main">Lấy lại giấc ngủ ngon, sâu giấc chỉ từ 10 ngày sử dụng</h4>
-					<p class="desc">Elitr quando accusata his ut, in eos agam principes, dictas imperdiet scripserit per et. Tale inciderint eloquentiam ius cu. Ei pro maluisset constituam, vim agam conceptam ei </p>
-				</div>
-
-				<div class="item right">
-					<img src="{{url('/')}}/img/uses/uses3.png">
-					<h4 class="main">Giảm lượng cholesterol và triglyceride giúp giảm khả năng đột quỵ, tai biến, tim mạch</h4>
-					<p class="desc">Elitr quando accusata his ut, in eos agam principes, dictas imperdiet scripserit per et
-				</div>
-
-				<div class="clear"></div>
-			</div>
-
-			<div class="c-row">
-				<div class="item">
-					<img src="{{url('/')}}/img/uses/uses2.png">
-					<h4 class="main">Kiểm soát căng thẳng, lo lắng và thay đổi trạng thái, có tác dụng bảo vệ mạnh mẽ đối với thần kinh và hệ thống thần kinh khỏi bị hư hỏng</h4>
-					<p class="desc">Elitr quando accusata his ut, in eos agam principes</p>
-				</div>
-
-				<div class="item right">
-					<img src="{{url('/')}}/img/uses/uses4.png">
-					<h4 class="main">An thần, giảm stress, mệt mỏi giúp tinh thần thư thái, nâng cao chất lượng cuộc sống</h4>
-					<p class="desc">Elitr quando accusata his ut, in eos agam principes, dictas imperdiet scripserit per et.</p>
-				</div>
-
-				<div class="clear"></div>
-			</div>
-		</div>
-
-		<div class="action">
-			<a href="{{url('/')}}/lien-he" target="_blank" class="button">Đăng ký tư vấn</a>
-		</div>
 	</div> -->
 
-	<!-- <div class="i-block">
-		<h2 class="title">Thành phần <span class="highlight">thực y trà Yakuzen</span></h2>
-
-		<div class="content">
-
-			<div class="c-row">
-				<div class="item triple">
-					<div class="center">
-						<img src="{{url('/')}}/img/rece/rece1.jpg">
-					</div>
-					<h4 class="main">Lá sen Nhật Bản</h4>
-					<p class="desc">An thần tốt hơn cả tâm sen, mang đến giấc ngủ sâu và ngon hơn</p>
-				</div>
-
-				<div class="item triple">
-					<div class="center">
-						<img src="{{url('/')}}/img/rece/rece2.jpg">
-					</div>
-					<h4 class="main">Nấm Linh Chi Đỏ Hàn Quốc</h4>
-					<p class="desc">Đào thải gốc tự do, kháng độc tố, giảm tối đa các triệu chứng đau đầu</p>
-				</div>
-
-				<div class="item triple">
-					<div class="center">
-						<img src="{{url('/')}}/img/rece/rece3.jpg">
-					</div>
-					<h4 class="main">Thiên Chi Ma</h4>
-					<p class="desc">Lọc, bổ sung dưỡng chất cho máu, điều trị suy giảm trí nhớ, chữa chóng mặt, choáng váng, đau đầu</p>
-				</div>
-			</div>
-
-			<div class="c-row">
-				<div class="item triple">
-					<div class="center">
-						<img src="{{url('/')}}/img/rece/rece4.jpg">
-					</div>
-					<h4 class="main">Giảo cổ lam</h4>
-					<p class="desc">Tiêu mỡ, hạ mỡ máu, ổn định đường huyết và huyết áp</p>
-				</div>
-
-				<div class="item triple">
-					<div class="center">
-						<img src="{{url('/')}}/img/rece/rece5.jpg">
-					</div>
-					<h4 class="main">Đương quy</h4>
-					<p class="desc">Cân bằng hormone, điều chỉnh trạng thái cơ thể</p>
-				</div>
-
-				<div class="item triple">
-					<div class="center">
-						<img src="{{url('/')}}/img/rece/rece6.jpg">
-					</div>
-					<h4 class="main">Gạo lứt</h4>
-					<p class="desc">Phòng chống loãng xương, viêm khớp, giảm cholesteron, ngăn đông máu, tốt cho tim mạch</p>
-				</div>
-			</div>
-
-			<div class="c-row">
-				<div class="item triple">
-					<div class="center">
-						<img src="{{url('/')}}/img/rece/rece7.jpg">
-					</div>
-					<h4 class="main">Khổ Qua Rừng</h4>
-					<p class="desc">Thanh nhiệt, giải độc, làm mát gan, xóa mờ vết nám da</p>
-				</div>
-
-				<div class="item triple">
-					<div class="center">
-						<img src="{{url('/')}}/img/rece/rece8.jpg">
-					</div>
-					<h4 class="main">Hạt Dẻ</h4>
-					<p class="desc">Giảm căng thẳng, chống Stress, kiểm soát và ổn định huyết áp</p>
-				</div>
-			</div>
-
-			<div class="clear"></div>
-		</div>
-
-		<div class="action">
-			<a href="#" class="button">Đăng ký tư vấn</a>
-		</div>
-	</div> -->
 
 	<div class="i-block odd">
 		<h2 class="title"><span class="highlight">THỰC Y TRÀ YAKUZEN</span> DÙNG CHO NHỮNG AI?</h2>
 
 		<div class="content">
 			<div class="c-row">
-				<div class="item double">
+				<div class="item triple">
 					<div class="center">
 						<img src="{{url('/')}}/img/targ/targ1.png">
 					</div>
@@ -217,7 +142,7 @@
 				</div>
 
 
-				<div class="item double right">
+				<div class="item triple">
 					<div class="center">
 						<img src="{{url('/')}}/img/targ/targ2.png">
 					</div>
@@ -225,20 +150,21 @@
 					<h4 class="main">Phụ nữ sau sinh, stress, áp lực trong cuộc sống</h4>
 				</div>
 
-				<div class="clear"></div>
-			</div>
 
-			<div class="c-row">
-				<div class="item double">
+				<div class="item triple">
 					<div class="center">
 						<img src="{{url('/')}}/img/targ/targ3.png">
 					</div>
 
 					<h4 class="main">Người hay bị đau đầu, đau mỏi vai gáy, thiếu mão lên não</h4>
 				</div>
+			</div>
 
+			<div class="clear"></div>
 
-				<div class="item double right">
+			<div class="c-row">
+				
+				<div class="item triple">
 					<div class="center">
 						<img src="{{url('/')}}/img/targ/targ4.png">
 					</div>
@@ -246,11 +172,7 @@
 					<h4 class="main">Người lao động trí óc căng thẳng hay gặp stress</h4>
 				</div>
 
-				<div class="clear"></div>
-			</div>
-
-			<div class="c-row">
-				<div class="item double">
+				<div class="item triple">
 					<div class="center">
 						<img src="{{url('/')}}/img/targ/targ5.png">
 					</div>
@@ -259,16 +181,16 @@
 				</div>
 
 
-				<div class="item double right">
+				<div class="item triple">
 					<div class="center">
 						<img src="{{url('/')}}/img/targ/targ6.png">
 					</div>
 
 					<h4 class="main">Người muốn được ngủ một <b>giấc ngủ</b> đúng nghĩa dù đã thử rất nhiều cách</h4>
 				</div>
-
-				<div class="clear"></div>
 			</div>
+
+			<div class="clear"></div>
 		</div>
 
 		<div class="action">
@@ -280,18 +202,27 @@
 		<h2 class="title">Khách hàng nói gì về <span class="highlight">Trà Yakuzen</span></h2>
 
 		<div class="content customer">
-			@foreach ($feedbacks as $feedback)
-				<div class="item quote">
-					<div class="cus">
-						<img src="{{url('/') . $feedback->avatar}}">
-						<h4 class="name">{{$feedback->name}}</h4>
-						<span class="info">{{$feedback->address}}, {{$feedback->age}} tuổi</span>
-						<div class="clear"></div>
-					</div>
-					<p class="text">"{{$feedback->content}}"</p>
-				</div>
-			@endforeach
+			<div class="sl-row">
+				<a href="#" class="slide-trigger b-left" data-trigger="quote"><i class="fa fa-angle-left"></i></a>
+				<a href="#" class="slide-trigger b-right" data-trigger="quote"><i class="fa fa-angle-right"></i></a>
 
+				<div class="slider" style="width: {{sizeof($feedbacks)*50 . 'vw'}}" id="quote" data-left="0" data-right="{{sizeof($feedbacks) - 2}}">
+					@foreach ($feedbacks as $feedback)
+						<div class="item quote">
+							<div class="cus">
+								<img src="{{url('/') . $feedback->avatar}}">
+								<h4 class="name">{{$feedback->name}}</h4>
+								<span class="info">{{$feedback->address}}, {{$feedback->age}} tuổi</span>
+								<div class="clear"></div>
+							</div>
+							<p class="text">"{{$feedback->content}}"</p>
+						</div>
+					@endforeach
+
+					<div class="clear"></div>
+
+				</div>
+			</div>
 			<div class="video center">
 				<h3>Video chia sẻ của khách hàng đã sử dụng Yakuzen</h3>
 
@@ -299,7 +230,7 @@
 			</div>
 
 
-			<div class="action">
+			<div class="action" style="padding-top: 0;padding-bottom: 50px">
 				<a href="{{url('/')}}/lien-he" target="_blank" class="button">Đăng ký tư vấn</a>
 			</div>
 		</div>
@@ -325,7 +256,7 @@
 					<h3 class="news-title">{{$item->title}}</h3>
 					<p>{{$item->snippet}}...
 					<br>
-					<a href="#">Xem thêm</a></p>
+					<a href="{{url('/') . '/bai-viet/' . $nobj->convertVietnamese($item->title) . '-' . $item->id}}" target="_blank">Xem thêm</a></p>
 				</div>
 			@endforeach
 

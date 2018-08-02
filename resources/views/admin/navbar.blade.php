@@ -25,8 +25,8 @@
 					</a>
 
 					<ul class="dropdown-menu dropdown-menu-right">
-						<li><a href="#"><i class="icon-cog5"></i> Cài đặt tài khoản</a></li>
-						<li><a href="#"><i class="icon-switch2"></i> Đăng xuất</a></li>
+						<!-- <li><a href="#"><i class="icon-cog5"></i> Cài đặt tài khoản</a></li> -->
+						<li><a href="{{url('/')}}/logout"><i class="icon-switch2"></i> Đăng xuất</a></li>
 					</ul>
 				</li>
 			</ul>
