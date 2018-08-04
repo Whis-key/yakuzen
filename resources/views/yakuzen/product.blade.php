@@ -66,7 +66,7 @@
 					<div class="center">
 						<img src="{{url('/')}}/img/rece/rece2.jpg">
 					</div>
-					<h4 class="main">Nấm Linh Chi Đỏ Hàn Quốc</h4>
+					<h4 class="main">Nấm Linh Chi Đỏ</h4>
 					<p class="desc">Đào thải gốc tự do, kháng độc tố, giảm tối đa các triệu chứng đau đầu</p>
 				</div>
 

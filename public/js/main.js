@@ -47285,12 +47285,14 @@ var tmOut = null;
 
 function hideElementsOnSmallScreen() {
 	if ($(window).width() < 1450) {
+		console.log('hideElementsOnSmallScreen');
 		$('.hidden-on-small-screen').fadeOut();
+		$('.s-right').css({ paddingLeft: '40px', paddingTop: '40px' });
 	} else {
 		$('.hidden-on-small-screen').fadeIn();
+		$('.s-right').removeAttr('style');
 	}
 }
-hideElementsOnSmallScreen();
 
 var setupTimer = function setupTimer() {
 	var d = 0;
@@ -47315,6 +47317,12 @@ var setupTimer = function setupTimer() {
 		}, 1000);
 	}
 };
+
+$(document).ready(function () {
+	setTimeout(function () {
+		hideElementsOnSmallScreen();
+	}, 100);
+});
 
 /***/ }),
 /* 38 */,

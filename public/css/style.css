@@ -74,13 +74,19 @@ ul li {
 .header .menu ul li.active a:hover {
   color: #fff;
 }
+.header .menu ul li.last {
+  margin-right: 0;
+}
+.header .menu ul li.last a {
+  padding-right: 0;
+}
 .header .menu ul li a {
   display: inline-block;
   color: #333;
-  padding: 12px 15px;
-  text-transform: uppercase;
+  padding: 12px 20px;
+  text-transform: capitalize;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 19px;
 }
 .header .menu ul li a:hover {
   color: #f00e0e;
@@ -193,12 +199,17 @@ ul li {
 .i-block.odd {
   background-color: #fffafa;
 }
+.i-block.targ .content .item .main {
+  text-transform: none!important;
+  line-height: 33px;
+}
 .i-block .title {
   text-transform: uppercase;
   font-weight: 600;
   text-align: center;
   font-size: 26px;
   margin-bottom: 15px;
+  /*line-height: 65px;*/
 }
 .i-block .title .highlight {
   color: #ee1d24;
@@ -217,7 +228,7 @@ ul li {
   margin-top: 70px;
 }
 .i-block .content.customer {
-  padding-top: 100px;
+  /*padding-top: 100px;*/
   overflow: hidden;
   min-width: 1110px;
 }
@@ -245,11 +256,13 @@ ul li {
   top: 0;
   -webkit-transform: none;
   transform: none;
+  border-radius: 0;
 }
 .i-block .content .item.triple .main {
   margin-top: 15px;
   font-size: 21px;
   text-align: center;
+  text-transform: capitalize;
 }
 .i-block .content .item.triple .desc {
   font-size: 16px;
@@ -278,10 +291,11 @@ ul li {
   text-align: center;
 }
 .i-block .content .item.quart .desc {
-  font-size: 16px;
-  max-width: 230px;
-  text-align: center;
+  font-size: 17px;
+  /*max-width: 230px;*/
+  text-align: justify;
   margin: auto;
+  line-height: 26px;
 }
 .i-block .content .item.double {
   padding-left: 0;
@@ -550,6 +564,7 @@ ul li {
 }
 .top-info a {
   color: #444;
+  font-weight: 600;
 }
 .top-info b {
   font-weight: 500;
@@ -568,6 +583,7 @@ ul li {
 }
 .top-info .phone {
   float: right;
+  margin-right: 0;
 }
 .fb-m {
   position: fixed;
@@ -660,8 +676,7 @@ ul li {
   margin-top: 11px;
 }
 .video {
-  margin-top: 120px;
-  margin-bottom: 70px;
+  margin-bottom: 120px;
 }
 .video h3 {
   font-size: 26px;
@@ -891,7 +906,7 @@ ul li {
           transform: translateY(-50%);
   font-size: 20px;
   font-weight: 300;
-  background: #e8e8e8;
+  background: #e21a21;
   padding: 12px 21px 12px 18px;
   border-radius: 50%;
   color: #fff;
@@ -936,6 +951,7 @@ ul li {
   float: left;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-height: 138px;
 }
 .card-item:last-child {
   margin-right: 0;
@@ -945,6 +961,8 @@ ul li {
   font-size: 22px;
   padding: 0;
   margin: 0;
+  line-height: 32px;
+  text-align: justify;
 }
 .s-line {
   position: relative;
@@ -958,7 +976,13 @@ ul li {
 .s-line .s-right {
   width: 50%;
   float: left;
-  padding-top: 100px;
+  padding-top: 65px;
+}
+.s-line .s-right h3 {
+  font-size: 27px;
+  font-weight: 500;
+  text-align: right;
+  color: #ee1d24;
 }
 .s-line .s-right p b {
   font-weight: 500;
@@ -966,6 +990,7 @@ ul li {
 .s-line p {
   font-size: 21px;
   text-align: justify;
+  line-height: 30px;
 }
 .s-line img.rose {
   width: 100%;
@@ -980,13 +1005,17 @@ ul li {
 .s-line .adv h4 {
   font-weight: 500;
   font-size: 21px;
-  text-align: right;
-  padding-right: 40px;
+  text-align: left;
+  padding-right: 60px;
   margin-bottom: 10px;
+}
+.s-line .adv ul {
+  padding-right: 60px;
 }
 .s-line .adv ul li {
   font-size: 20px;
   margin-bottom: 5px;
+  text-align: justify;
 }
 .s-line img.ov {
   width: 700px;
@@ -996,6 +1025,22 @@ ul li {
           transform: none;
   top: 150px;
   left: 150px;
+}
+.flip {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.problems {
+  padding-top: 50px !important;
+  padding-bottom: 80px !important;
+}
+.problems .content {
+  margin-top: 50px;
+}
+.text-video {
+  margin-top: 30px;
+  font-size: 19px;
+  font-style: italic;
 }
 @-webkit-keyframes bling {
   from {

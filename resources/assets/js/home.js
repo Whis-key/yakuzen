@@ -80,7 +80,9 @@ $(document).ready(function(){
 	setCustomerFbPOsition();
 	setupTimer();
 
-
+	setTimeout(function(){
+		setupSRight();
+	}, 200);
 });
 
 function setCustomerFbPOsition(){
@@ -117,4 +119,16 @@ function setUpErrorTimeout(){
 	errorTimeout = setTimeout(function(){
 		$('.error-message').css('display', 'none');
 	}, 10000);
+}
+
+function setupSRight(){
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	 	$('.s-right').css({paddingLeft: '80px', paddingTop: '0px'});
+		$('.s-right p').css({fontSize: '20px'});
+
+		$('.i-block .title').css({fontSize: '26px', lineHeight: '65px'});
+	} else {
+		$('.s-right').removeAttr('style');
+		$('.s-right p').removeAttr('style');
+	}
 }

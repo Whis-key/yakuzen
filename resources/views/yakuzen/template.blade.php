@@ -15,7 +15,7 @@
 
 		<a href="#" class="back2top button"><i class="fa fa-angle-up"></i></a>
 
-		<a href="tel:+84981735115" class="d-call button"><i class="fa fa-phone"></i></a>
+		<a href="tel:+84981735115" class="d-call button"><i class="fa fa-phone flip"></i></a>
 
 		<a href="https://www.facebook.com/messages/t/biquyetngungonNhatBan" target="_blank" class="fb-m"><img src="{{url('/')}}/img/facebook-mess.png">
 			<span>Trò chuyện qua Facebook Messager</span>
