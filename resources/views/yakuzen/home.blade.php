@@ -246,7 +246,7 @@
 	</div>
 
 	<div class="i-block odd">
-		<h2 class="title">Khách hàng nói gì về <span class="highlight">Trà Yakuzen</span></h2>
+		<h2 class="title">Khách hàng nói gì về <span class="highlight">Thực Y Trà Yakuzen</span></h2>
 
 		<div class="content customer">
 			<div class="video center">
@@ -291,6 +291,18 @@
 			</div>
 		</div>
 		
+	</div>
+
+	<div class="i-block">
+		<h2 class="title">Giấy chứng nhận <span class="highlight">Thực Y Trà Yakuzen</span></h2>
+
+		<div class="content">
+			<div class="cert">
+				<img src="{{url('/')}}/img/cert1.jpg">
+				<img src="{{url('/')}}/img/cert1.jpg">
+			</div>
+			<div class="clear"></div>
+		</div>
 	</div>
 
 	@include('yakuzen.contact')

@@ -232,6 +232,20 @@ ul li {
   overflow: hidden;
   min-width: 1110px;
 }
+.i-block .content .cert img {
+  border-radius: 0;
+  width: 48%;
+  position: relative;
+  -webkit-transform: none;
+          transform: none;
+  top: 0;
+  height: auto;
+  float: left;
+  margin-right: 4%;
+}
+.i-block .content .cert img:last-child {
+  margin-right: 0;
+}
 .i-block .content .item {
   width: 45%;
   padding-left: 185px;
