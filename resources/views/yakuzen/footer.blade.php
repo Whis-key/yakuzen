@@ -1,7 +1,8 @@
 <div class="footer">
 	<div class="left">
+		<img src="{{url('/')}}/img/starvi.png">
+
 		<h3 class="company">Công ty cổ phần thương mại và dịch vụ StarVi</h3>
-		<img src="{{url('/')}}/img/drd.png">
 
 		<ul>
 			<li><b>Địa chỉ:</b> P2602 tòa nhà Thăng Long Tower, Yên Hòa, Cầu Giấy, Hà Nội.</li>
@@ -13,17 +14,18 @@
 
 	<div class="right">
 		<div class="certification">
-			<h4>Giấy phép hoạt động</h4>
+			<h4>Chính sách</h4>
 
 			<ul>
-				<li><b>Ðăng kí kinh doanh tại:</b> Số 51B ngõ 35 Khương Hạ, Phường Khương Đình, Quận Thanh Xuân, Hà Nội</li>
-				<li>Sở Kế Hoạch & Ðầu Tư TP Hà Nội Cấp giấy phép số <b>0106138449</b></li>
-				<li><b>Giấy phép hoạt động:</b> Số 259/ GP - BTTTT do bộ thông tin và truyền thông cấp ngày 20/05/2016</li>
+				<li><a href="#">Phương thức bán hàng</a></li>
+				<li><a href="#">Hướng dẫn mua hàng</a></li>
+				<li><a href="#">Thời gian nhận hàng</a></li>
+				<li><a href="#">Phương thức vận chuyển</a></li>
 			</ul>
 		</div>
 
 		<div class="contact">
-			<h4>Liên hệ</h4>
+			<h4>Kết nối với chúng tôi</h4>
 
 			<ul>
 				<li><a href="https://www.facebook.com/biquyetngungonNhatBan"><img src="{{url('/')}}/img/fb.png"></a></li>

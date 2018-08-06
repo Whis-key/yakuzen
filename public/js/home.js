@@ -47140,7 +47140,8 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 37 */
+/* 37 */,
+/* 38 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47292,6 +47293,12 @@ function hideElementsOnSmallScreen() {
 		$('.hidden-on-small-screen').fadeIn();
 		$('.s-right').removeAttr('style');
 	}
+
+	if ($(window).width() < 1300) {
+		$('#contact-form .block').css('top', '7%');
+	} else {
+		$('#contact-form .block').removeAttr('style');
+	}
 }
 
 var setupTimer = function setupTimer() {
@@ -47325,7 +47332,6 @@ $(document).ready(function () {
 });
 
 /***/ }),
-/* 38 */,
 /* 39 */,
 /* 40 */,
 /* 41 */,
@@ -47348,9 +47354,9 @@ module.exports = __webpack_require__(50);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_js__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_js__ = __webpack_require__(38);
 __webpack_require__(11);
-__webpack_require__(37);
+__webpack_require__(38);
 
 
 
@@ -47391,14 +47397,17 @@ $(document).ready(function () {
 	});
 
 	var videos = $('#fb-video').attr('data-videos').split(';');
+	var texts = $('#fb-video').attr('data-texts').split('~');
 
 	$('.next-video').click(function () {
 		var i = parseInt($('#fb-video').attr('data-index'));
 		if (i < videos.length - 1) {
 			$('#fb-video iframe').attr('src', videos[i + 1]);
+			$('#video-text').text(texts[i + 1]);
 			$('#fb-video').attr('data-index', i + 1);
 		} else {
 			$('#fb-video iframe').attr('src', videos[0]);
+			$('#video-text').text(texts[0]);
 			$('#fb-video').attr('data-index', 0);
 		}
 	});
@@ -47407,9 +47416,11 @@ $(document).ready(function () {
 		var i = parseInt($('#fb-video').attr('data-index'));
 		if (i > 0) {
 			$('#fb-video iframe').attr('src', videos[i - 1]);
+			$('#video-text').text(texts[i - 1]);
 			$('#fb-video').attr('data-index', i - 1);
 		} else {
 			$('#fb-video iframe').attr('src', videos[videos.length - 1]);
+			$('#video-text').text(texts[texts.length - 1]);
 			$('#fb-video').attr('data-index', videos.length - 1);
 		}
 	});

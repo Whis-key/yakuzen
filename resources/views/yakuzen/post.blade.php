@@ -4,6 +4,14 @@
 	Trà thực dưỡng Yakuzen | Nội dung bài viết
 @endsection
 
+@section('description')
+	<meta name="description" content="{{$post->description}}">
+@endsection
+
+@section('keywords')
+	<meta name="keywords" content="{{$post->keywords}}">
+@endsection
+
 @section('script')
 	<script type="text/javascript" src="{{url('/')}}/js/main.js"></script>
 @endsection

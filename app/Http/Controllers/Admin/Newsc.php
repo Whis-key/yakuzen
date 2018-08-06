@@ -32,7 +32,9 @@ class Newsc extends Controller
     		'/storage/' . $path,
     		$request->input('category'),
     		$request->input('hot') ? 1 : 0,
-    		$request->input('content')
+    		$request->input('content'),
+            $request->input('keywords'),
+            $request->input('description')
     	);
 
     	$request->session()->flash('success', 1);

@@ -8,6 +8,7 @@ use App\Models\Config;
 use App\Models\CustomerFeedback;
 use App\Models\News;
 use App\Models\Registration;
+use App\Models\Vid;
 
 class Yakuzen extends Controller
 {
@@ -16,7 +17,9 @@ class Yakuzen extends Controller
         $feedbackVideoLinks = Config::getFeedBackVideoLinks();
         $feedbacks = CustomerFeedback::getAll();
         $news = News::get(null, 3, 0, true);
+        $videos = Vid::getAll();
 
+        $data['video'] = $videos;
         $data['nobj'] = new News();
         $data['news'] = $news;
         $data['feedbacks'] = $feedbacks;

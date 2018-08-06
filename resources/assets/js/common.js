@@ -152,6 +152,12 @@ function hideElementsOnSmallScreen(){
 		$('.hidden-on-small-screen').fadeIn();
 		$('.s-right').removeAttr('style');
 	}
+
+	if($(window).width() < 1300){
+		$('#contact-form .block').css('top', '7%');
+	} else {
+		$('#contact-form .block').removeAttr('style');
+	}
 }
 
 

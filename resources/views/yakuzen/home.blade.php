@@ -256,11 +256,11 @@
 					<a href="#" class="slide-trigger b-left prev-video" data-trigger="vid"><i class="fa fa-angle-left"></i></a>
 					<a href="#" class="slide-trigger b-right next-video" data-trigger="vid"><i class="fa fa-angle-right"></i></a>
 					
-					<div class="slider" id="fb-video" data-index="0" data-videos="{{implode(';', $feedbackVideoLink)}}">
-						<iframe width="100%" height="500" src="{{$feedbackVideoLink[0]}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen data-index="0"></iframe>
+					<div class="slider" id="fb-video" data-index="0" data-videos="{{implode(';', $video->link)}}" data-texts="{{implode('~', $video->text)}}">
+						<iframe width="100%" height="500" src="{{$video->link[0]}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen data-index="0"></iframe>
 					</div>
 
-					<div class="text-video">Et denique electram reprimique vel, brute vulputate id vim, causae intellegam quo ne. Ludus graecis sea ne, dicunt causae epicurei et mea. In sed graece hendrerit. Cibo ullum instructior pro ea. </div>
+					<div class="text-video" id="video-text">{{$video->text[0]}}</div>
 				</div>
 			</div>
 
@@ -307,7 +307,7 @@
 
 	@include('yakuzen.contact')
 
-	<div class="i-block news odd">
+	<div class="i-block news odd" style="background: #fcfcfc">
 		<h2 class="title">Tin tức mới nhất</h2>
 
 		<div class="content">

@@ -22,7 +22,7 @@ class News extends Model
     	return $q->get();
     }
 
-    public static function saveNews($name, $snippet, $thumbnail, $category, $hot, $content){
+    public static function saveNews($name, $snippet, $thumbnail, $category, $hot, $content, $keywords, $description){
     	$nw = new News();
     	$nw->title = $name;
     	$nw->snippet = $snippet;
@@ -30,6 +30,8 @@ class News extends Model
     	$nw->category = $category;
     	$nw->hot = $hot;
     	$nw->content = $content;
+        $nw->keywords = $keywords;
+        $nw->description = $description;
 
     	return $nw->save();
     }

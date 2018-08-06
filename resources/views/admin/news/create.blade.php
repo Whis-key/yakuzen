@@ -4,7 +4,6 @@
 	<script type="text/javascript" src="{{url('/')}}/assets/js/core/app.js"></script>
 	<!-- Theme JS files -->
 	<script type="text/javascript" src="{{url('/')}}/assets/ckeditor/ckeditor.js"></script>
-	<script type="text/javascript" src="{{url('/')}}/assets/js/core/app.js"></script>
 	<!-- /theme JS files -->
 	<script type="text/javascript" src="{{url('/')}}/js/news.create.js"></script>
 @endsection
@@ -63,6 +62,22 @@
 						<input type="text" class="form-control" name="name"
 						placeholder="Nhập tiêu đề bài viết"
 						value="{{$pdata&&$pdata['name'] ? $pdata['name'] : ''}}">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label col-lg-2">Description</label>
+					<div class="col-lg-10">
+						<textarea class="form-control" rows="3" placeholder="Nhập mô tả cho bài viết" name="description">{{$pdata&&$pdata['description'] ? $pdata['description'] : ''}}</textarea>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label col-lg-2">Từ khóa</label>
+					<div class="col-lg-10">
+						<input type="text" class="form-control" name="keywords"
+						placeholder="Nhập từ khóa, cách nhau dấu phẩy"
+						value="{{$pdata&&$pdata['keywords'] ? $pdata['keywords'] : ''}}">
 					</div>
 				</div>
 

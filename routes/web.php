@@ -34,11 +34,18 @@ Route::namespace('Admin')->group(function () {
     Route::post('/admin/danh-sach-dang-ky/ds', 'Registration@list')->middleware('auth');
     Route::post('/admin/danh-sach-dang-ky/xu-ly', 'Registration@mark')->middleware('auth');
 
-    Route::get('/admin/phan-hoi-khach-hang/ds', 'Quote@index')->middleware('auth');
-    Route::post('/admin/phan-hoi-khach-hang/danh-sach', 'Quote@list')->middleware('auth');
-    Route::post('/admin/phan-hoi-khach-hang/xoa', 'Quote@del')->middleware('auth');
-    Route::get('/admin/phan-hoi-khach-hang/them-moi', 'Quote@create')->name('feedback-create')->middleware('auth');
-    Route::post('/admin/phan-hoi-khach-hang/luu-lai', 'Quote@save')->name('feedback-save')->middleware('auth');
+    // Route::get('/admin/phan-hoi-khach-hang/ds', 'Quote@index')->middleware('auth');
+    // Route::post('/admin/phan-hoi-khach-hang/danh-sach', 'Quote@list')->middleware('auth');
+    // Route::post('/admin/phan-hoi-khach-hang/xoa', 'Quote@del')->middleware('auth');
+    // Route::get('/admin/phan-hoi-khach-hang/them-moi', 'Quote@create')->name('feedback-create')->middleware('auth');
+    // Route::post('/admin/phan-hoi-khach-hang/luu-lai', 'Quote@save')->name('feedback-save')->middleware('auth');
+
+
+    Route::get('/admin/phan-hoi-khach-hang/ds', 'Video@index')->middleware('auth');
+    Route::post('/admin/phan-hoi-khach-hang/danh-sach', 'Video@list')->middleware('auth');
+    Route::post('/admin/phan-hoi-khach-hang/xoa', 'Video@del')->middleware('auth');
+    Route::get('/admin/phan-hoi-khach-hang/them-moi', 'Video@create')->name('video-create')->middleware('auth');
+    Route::post('/admin/phan-hoi-khach-hang/luu-lai', 'Video@save')->name('video-save')->middleware('auth');
 
     Route::get('/admin/tin-tuc/ds', 'Newsc@index')->middleware('auth');
     Route::get('/admin/tin-tuc/them-moi', 'Newsc@create')->name('news-create')->middleware('auth');

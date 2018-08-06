@@ -46,14 +46,17 @@ $(document).ready(function(){
 
 
 	var videos = $('#fb-video').attr('data-videos').split(';');
+	var texts = $('#fb-video').attr('data-texts').split('~');
 	
 	$('.next-video').click(function(){
 		var i = parseInt($('#fb-video').attr('data-index'));
 		if(i<videos.length-1){
 			$('#fb-video iframe').attr('src', videos[i+1]);
+			$('#video-text').text(texts[i+1]);
 			$('#fb-video').attr('data-index', i+1);
 		} else {
 			$('#fb-video iframe').attr('src', videos[0]);
+			$('#video-text').text(texts[0]);
 			$('#fb-video').attr('data-index', 0);
 		}
 	});
@@ -62,9 +65,11 @@ $(document).ready(function(){
 		var i = parseInt($('#fb-video').attr('data-index'));
 		if(i>0){
 			$('#fb-video iframe').attr('src', videos[i-1]);
+			$('#video-text').text(texts[i-1]);
 			$('#fb-video').attr('data-index', i-1);
 		} else {
 			$('#fb-video iframe').attr('src', videos[videos.length-1]);
+			$('#video-text').text(texts[texts.length - 1]);
 			$('#fb-video').attr('data-index', videos.length - 1);
 		}
 	});

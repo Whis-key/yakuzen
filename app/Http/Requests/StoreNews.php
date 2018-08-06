@@ -29,16 +29,21 @@ class StoreNews extends FormRequest
             'thumbnail' => 'required|mimes:jpeg,bmp,png',
             'category' => 'required',
             'content' => 'required',
+            'keywords' => 'required',
+            'description' => 'required'
         ];
     }
 
     public function messages(){
         return [
             'name.required' => 'Vui lòng nhập tiêu đề bài viết',
+            'description.required' => 'Vui lòng nhập mô tả cho bài viết',
+            'keywords.required' => 'Vui lòng nhập từ khóa cho bài viết',
             'snippet.required' => 'Vui lòng nhập nội dung tóm tắt',
             'content.required' => 'Vui lòng nhập nội dung bài viết',
             'thumbnail.required' => 'Vui lòng chọn hình đại diện',
             'thumbnail.mimes' => 'Hình đại diện không đúng định dạng'
+
         ];
     }
 

@@ -31,13 +31,23 @@
 				<ul class="navigation navigation-main navigation-accordion">
 					<li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
 					<li class="{{$menu=='index' ? 'active' : ''}}"><a href="{{url('/')}}/admin"><i class="icon-cog3"></i> <span>Cấu hình chung</span></a></li>
-					<li class="{{in_array($menu, ['feedback-list', 'feedback-create']) ? 'active' : ''}}">
+					<!-- <li class="{{in_array($menu, ['feedback-list', 'feedback-create']) ? 'active' : ''}}">
 						<a href="javascript:;" class="has-ul"><i class="icon-people"></i> <span>Phản hồi khách hàng</span></a>
 						<ul style="display: {{in_array($menu, ['feedback-list', 'feedback-create']) ? 'block' : 'none'}}">
 							<li class="{{$menu=='feedback-create' ? 'active' : ''}}""><a href="{{url('/')}}/admin/phan-hoi-khach-hang/them-moi">Thêm phản hồi mới</a></li>
 							<li class="{{$menu=='feedback-list' ? 'active' : ''}}"><a href="{{url('/')}}/admin/phan-hoi-khach-hang/ds">Danh sách phản hồi</a></li>
 						</ul>
+					</li> -->
+
+					<li class="{{in_array($menu, ['video-list', 'video-create']) ? 'active' : ''}}">
+						<a href="javascript:;" class="has-ul"><i class="icon-people"></i> <span>Video phản hồi </span></a>
+						<ul style="display: {{in_array($menu, ['video-list', 'video-create']) ? 'block' : 'none'}}">
+							<li class="{{$menu=='video-create' ? 'active' : ''}}""><a href="{{url('/')}}/admin/phan-hoi-khach-hang/them-moi">Thêm video phản hồi mới</a></li>
+							<li class="{{$menu=='video-list' ? 'active' : ''}}"><a href="{{url('/')}}/admin/phan-hoi-khach-hang/ds">Danh sách phản hồi</a></li>
+						</ul>
 					</li>
+
+					
 					<li class="{{in_array($menu, ['news-list', 'news-create']) ? 'active' : ''}}">
 						<a href="javascript:;" class="has-ul"><i class="icon-file-text2"></i> <span>Quản lý tin tức</span></a>
 						<ul style="display: {{in_array($menu, ['news-list', 'news-create']) ? 'block' : 'none'}}">

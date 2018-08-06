@@ -48,89 +48,6 @@
 		<div class="clear"></div>
 	</div>
 
-	<div class="i-block odd">
-		<h2 class="title">Thành phần <span class="highlight">thực y trà Yakuzen</span></h2>
-
-		<div class="content">
-
-			<div class="c-row">
-				<div class="item quart">
-					<div class="center">
-						<img src="{{url('/')}}/img/rece/rece1.jpg">
-					</div>
-					<h4 class="main">Lá sen Nhật Bản</h4>
-					<p class="desc">An thần tốt hơn cả tâm sen, mang đến giấc ngủ sâu và ngon hơn</p>
-				</div>
-
-				<div class="item quart">
-					<div class="center">
-						<img src="{{url('/')}}/img/rece/rece2.jpg">
-					</div>
-					<h4 class="main">Nấm Linh Chi Đỏ</h4>
-					<p class="desc">Đào thải gốc tự do, kháng độc tố, giảm tối đa các triệu chứng đau đầu</p>
-				</div>
-
-				<div class="item quart">
-					<div class="center">
-						<img src="{{url('/')}}/img/rece/rece3.jpg">
-					</div>
-					<h4 class="main">Thiên Chi Ma</h4>
-					<p class="desc">Lọc, bổ sung dưỡng chất cho máu, điều trị suy giảm trí nhớ, chữa chóng mặt, choáng váng, đau đầu</p>
-				</div>
-
-				<div class="item quart">
-					<div class="center">
-						<img src="{{url('/')}}/img/rece/rece4.jpg">
-					</div>
-					<h4 class="main">Giảo cổ lam</h4>
-					<p class="desc">Tiêu mỡ, hạ mỡ máu, ổn định đường huyết và huyết áp</p>
-				</div>
-			</div>
-
-			<div class="clear"></div>
-
-			<div class="c-row">
-				<div class="item quart">
-					<div class="center">
-						<img src="{{url('/')}}/img/rece/rece5.jpg">
-					</div>
-					<h4 class="main">Đương quy</h4>
-					<p class="desc">Cân bằng hormone, điều chỉnh trạng thái cơ thể</p>
-				</div>
-
-				<div class="item quart">
-					<div class="center">
-						<img src="{{url('/')}}/img/rece/rece6.jpg">
-					</div>
-					<h4 class="main">Gạo lứt</h4>
-					<p class="desc">Phòng chống loãng xương, viêm khớp, giảm cholesteron, ngăn đông máu, tốt cho tim mạch</p>
-				</div>
-
-				<div class="item quart">
-					<div class="center">
-						<img src="{{url('/')}}/img/rece/rece7.jpg">
-					</div>
-					<h4 class="main">Khổ Qua Rừng</h4>
-					<p class="desc">Thanh nhiệt, giải độc, làm mát gan, xóa mờ vết nám da</p>
-				</div>
-
-				<div class="item quart">
-					<div class="center">
-						<img src="{{url('/')}}/img/rece/rece8.jpg">
-					</div>
-					<h4 class="main">Hạt Dẻ</h4>
-					<p class="desc">Giảm căng thẳng, chống Stress, kiểm soát và ổn định huyết áp</p>
-				</div>
-			</div>
-
-			<div class="clear"></div>
-		</div>
-
-		<div class="action">
-			<a href="{{url('/')}}/lien-he" target="_blank" class="button">Đăng ký tư vấn</a>
-		</div>
-	</div>
-
 	<div class="i-block product-info probs">
 		<div class="pt-left">
 
@@ -145,17 +62,20 @@
 
 			<p class="description" style="padding-left: 12px;">
 				Bạn bị <b>khó ngủ, ngủ không sâu</b>, lên giường nằm lăn qua lăn lại vài tiếng mà mắt vẫn mở "thao láo", chỉ cần tiếng động nhỏ cũng làm bạn tỉnh giấc. 
+				<br><br>
 
 				Dù tình trạng này mới xuất hiện vài ngày cũng đã khiến bạn cảm thấy rất <b>mệt mỏi</b>, sáng dậy không thể làm việc nổi, không muốn giao tiếp, chuyện trò cùng ai. <b>Mắt thâm, da xám xịt, đầu óc căng và đau nhức</b>, lúc nào cũng muốn nằm nghỉ dù nằm cũng chẳng ngủ được.
 
+				<br><br>
 				Nhiều ngày, nhiều năm trôi qua nhưng tình trạng vẫn chưa được cải thiện dù bạn đã dùng đủ loại từ thuốc ngủ, thuốc Nam, thuốc Bắc. 
 
+				<br><br>
 				Dùng thuốc ngủ thì ngủ ngay nhưng sáng dậy vô cùng mệt mỏi, <b>người đờ đẫn, hại sức khỏe</b>. Các bệnh: <b>huyết áp, tim mạch, tiểu đường, thoát vị đĩa đêm, thận ứ nước, trầm cảm</b>...cứ ồ ạt kéo về như nước lũ. Chẳng bao lâu thì bị nhờn thuốc ngủ và chẳng còn cách nào để ngủ lại được nữa. 
-
+				<br><br>
 				Huyết áp thì chập chờn. Nhiều đêm không ngủ, huyết áp tăng 170 - 180 lucs 3 - 4h sáng, lo sợ nguy cơ tai biến rình rập bất cứ lúc nào
 				Cuộc sống sao mà khổ thế, cái gì cũng khổ...
 				Bạn mong muốn tìm lại giấc ngủ ngon 6-7 giờ/đêm, sức khỏe hồi phục trở lại, không còn lệ thuộc thuốc an thần nữa?
-
+				<br><br>
 				Thấu hiểu những nỗi vất vả và những khó khăn khi điều trị chứng mất ngủ, các chuyên gia hàng đầu ngành Dược đã cho ra đời sản phẩm <b>Yakuzen</b> với mong muốn giúp người mất ngủ tìm lại giấc ngủ ngon, không còn mệt mỏi khi thức dậy, hạn chế lệ thuộc thuốc an thần.
 			</p>
 
@@ -239,6 +159,48 @@
 							</p>
 						</li>
 					</ul>
+				</div>
+			</div>
+
+			<div class="product-detail">
+				<h2 class="title">Thông tin chi tiết sản phẩm Thực Y Trà Yakuzen</h2>
+				<div class="p-row">
+					<b>Giải thưởng:</b> <span>Huy chương vàng vì sức khỏe cộng đồng</span>
+					<div class="clear"></div>
+				</div>
+
+				<div class="p-row">
+					<b>Nhà sản xuất:</b> <span>Công ty cổ phần thương mại và dịch vụ StarVi</span>
+					<div class="clear"></div>
+				</div>
+
+				<div class="p-row">
+					<b>Công dụng:</b> <span>Hỗ trợ điều trị bệnh mất ngủ, khó ngủ, ngủ không sâu. Giúp đem lại giấc ngủ tự nhiên và cải thiện chất lượng giấc ngủ do căng thẳng, suy nhược thần kinh, stress. Giúp an thần, giảm stress và căng thẳng thần kinh.</span>
+					<div class="clear"></div>
+				</div>
+
+				<div class="p-row">
+					<b>Giá bán lẻ:</b> <span>{{str_replace(',', '.',number_format($price))}}đ/hộp</span>
+					<div class="clear"></div>
+				</div>
+
+				<div class="p-row">
+					<b>Ai nên dùng Thực Y Trà Yakuzen:</b> <span>Người mất ngủ, khó ngủ, ngủ không được do suy nghĩ, lo âu, căng thẳng, stress, sốc tâm lý, do huyết áp cao, do tuổi tác (Phụ nữ tiền mãn kinh; Nam giới tuổi mãn dục). Mất ngủ kinh niên</span><div class="clear"></div>
+				</div>
+
+				<div class="p-row">
+					<b>Quà tặng:</b> <span>Đặt hàng 3 hộp trên website tặng ngay 1 hộp Thực Y Trà Yakuzen</span>
+					<div class="clear"></div>
+				</div>
+
+				<div class="p-row">
+					<b>Bạn sẽ cảm thấy thế nào sau khi dùng Thực Y Trà Yakuzen:</b> <span>Bạn có mong muốn mình cứ đặt lưng lên giường là ngủ một mạch, giấc ngủ sâu, chẳng còn lo lắng gì nữa. Buổi sáng ngủ dậy thoải mái, tinh thần phấn chấn để học tập, làm việc, sinh hoạt. Với tâm trạng như vậy, chắc chắn vẻ mặt bạn sẽ rạng rỡ, người khỏe khoắn, công việc sẽ thuận lợi, gia đình hạnh phúc hơn</span>
+					<div class="clear"></div>
+				</div>
+
+				<div class="p-row">
+					<b>Dịch vụ khách hàng tận tâm:</b> <span>Với sự cố vấn, hỗ trợ chuyên môn của các dược sỹ, Thực Y Trà Yakuzen cam kết đồng hành, tư vấn hỗ trợ khách hàng trong suốt quá trình sử dụng sản phẩm. Các Dược sỹ sẽ gọi điện thoại để theo dõi sự cải thiện giấc ngủ trong suốt thời gian sử dụng. Khách hàng có thể liên hệ với Dược sỹ để được tư vấn miễn phí.</span>
+					<div class="clear"></div>
 				</div>
 			</div>
 		</div>

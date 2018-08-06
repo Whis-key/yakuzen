@@ -15,7 +15,7 @@
 			<div class="news-item">
 				<img src="{{url('/') . $item->thumbnail}}">
 
-				<h4>{{$item->title}}</h4>
+				<h4><a href="{{url('/') . '/bai-viet/' . $news->convertVietnamese($item->title) . '-' . $item->id}}">{{$item->title}}</a></h4>
 				<div class="info"><i class="fa far-calendar-o"></i>Ngày {{date_format($item->created_at, 'd/m/Y')}} lúc {{date_format($item->created_at, 'H:i')}}</div>
 
 				<p>{{\Illuminate\Support\Str::words($item->snippet, 30, '...')}}</p>

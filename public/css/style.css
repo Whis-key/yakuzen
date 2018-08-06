@@ -398,7 +398,8 @@ ul li {
 }
 .footer {
   padding: 100px 12%;
-  background-color: #f1f5f7;
+  background-color: #000;
+  color: #c3c5c6;
 }
 .footer .left {
   width: 45%;
@@ -411,32 +412,35 @@ ul li {
 }
 .footer .left img {
   width: 150px;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
 .footer .left ul li {
-  color: #333;
+  color: #c3c5c6;
   margin-bottom: 20px;
   font-size: 17px;
   font-size: 16px;
   line-height: 25px;
 }
 .footer .left ul li a {
-  color: #333;
+  color: #c3c5c6;
 }
 .footer .right {
   width: 35%;
   float: right;
-  color: #333;
+  color: #c3c5c6;
 }
 .footer .right .certification h4 {
   font-size: 20px;
   font-weight: 500;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .footer .right .certification ul li {
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
   line-height: 25px;
+}
+.footer .right .certification ul li a {
+  color: #c3c5c6;
 }
 .footer .right .contact {
   margin-top: 40px;
@@ -748,6 +752,12 @@ ul li {
   font-size: 20px;
   margin-bottom: 5px;
 }
+.news-block .news-item h4 a {
+  padding: 0;
+  color: #333;
+  background: none;
+  font-size: 20px;
+}
 .news-block .news-item p {
   margin-top: 0;
   font-size: 17px;
@@ -945,17 +955,17 @@ ul li {
 }
 .tabs ul li a {
   display: inline-block;
-  padding: 12px;
+  padding: 8px;
   color: #fff;
   font-size: 22px;
 }
 .tabs ul li.active a {
-  height: 66px;
-  margin-top: -12px;
+  height: 51px;
+  margin-top: -5px;
   background: #a40f14;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  line-height: 47px;
+  line-height: 38px;
 }
 .card-item {
   width: 23.5%;
@@ -1055,6 +1065,25 @@ ul li {
   margin-top: 30px;
   font-size: 19px;
   font-style: italic;
+}
+.product-detail .p-row {
+  text-align: left;
+  font-size: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.product-detail .p-row:last-child {
+  border-bottom: 0;
+}
+.product-detail .p-row b {
+  width: 30%;
+  display: inline-block;
+  float: left;
+}
+.product-detail .p-row span {
+  float: right;
+  width: 65%;
 }
 @-webkit-keyframes bling {
   from {

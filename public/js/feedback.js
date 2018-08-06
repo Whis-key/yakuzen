@@ -47140,7 +47140,8 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 37 */
+/* 37 */,
+/* 38 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47292,6 +47293,12 @@ function hideElementsOnSmallScreen() {
 		$('.hidden-on-small-screen').fadeIn();
 		$('.s-right').removeAttr('style');
 	}
+
+	if ($(window).width() < 1300) {
+		$('#contact-form .block').css('top', '7%');
+	} else {
+		$('#contact-form .block').removeAttr('style');
+	}
 }
 
 var setupTimer = function setupTimer() {
@@ -47325,7 +47332,6 @@ $(document).ready(function () {
 });
 
 /***/ }),
-/* 38 */,
 /* 39 */,
 /* 40 */,
 /* 41 */,
@@ -47352,9 +47358,9 @@ module.exports = __webpack_require__(54);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_js__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_js__ = __webpack_require__(38);
 __webpack_require__(11);
-__webpack_require__(37);
+__webpack_require__(38);
 
 
 
